@@ -1,0 +1,44 @@
+<view class="main bg-f7 bg-login plr30 ptb30 border-box">
+	<view class="ptb30">
+		<view class="c-white f24 fb mt20">电佳，欢迎您！</view>
+		<image src="../../img/welcome.png" style="width: 384rpx;height: 35rpx;" class="mt10"></image>
+	</view>
+	<block>
+		<view wx:if="{{loginCode}}">
+			<view class="input-items bg-white mt10 plr15 ptb10 f14 border-box">
+				<input type="number" placeholder="请输入您的联系方式" placeholder-class="f16 c-A5B1C4" class="f16" bindinput="bindPhone" />
+			</view>
+			<view class="input-items bg-white mt20 plr15 ptb10 f14 flexBox center-item border-box">
+				<input type="text" placeholder="请输入验证码" placeholder-class="f16 c-A5B1C4" class="f16" bindinput="bindCode" />
+				<text class="plr10">|</text>
+				<button class="code-btn" size="mini" plain="true">{{codeMsg}}</button>
+			</view>
+		</view>
+		<view wx:else>
+			<view class="input-items bg-white mt10 plr15 ptb10 f14 border-box">
+				<input type="number" placeholder="请输入您的联系方式" placeholder-class="f16 c-A5B1C4" class="f16" bindinput="bindPhone" />
+			</view>
+			<view class="input-items bg-white mt20 plr15 ptb10 f14 border-box">
+				<input type="password" placeholder="请输入您的密码" placeholder-class="f16 c-A5B1C4" class="f16" bindinput="bindPhone" />
+			</view>
+			<navigator url="/pages/forget/forget" class="c-white f14 tr mt10" hover-class="none">忘记密码？</navigator>
+		</view>
+	</block>
+	<view class="mt30 plr10 ptb20 tc">
+		<view bindtap="subApply" class="withdrawal tc bg-white f20 fb mt10 c-3F8DFC">登录</view>
+		<block>
+			<view wx:if="{{loginCode}}" class="c-white mt20 f14" bindtap="switchLogin">密码登录</view>
+			<view wx:else class="c-white mt20 f14" bindtap="switchLogin">验证码登录</view>
+		</block>
+	</view>
+	<view class="wechat-login tc c-white f14">
+		<view class="justbetween center-item plr15">
+			<view class="line-left"></view>
+			<view>微信快捷登录</view>
+			<view class="line-right"></view>
+		</view>
+		<view>
+			<image src="../../img/login_weichat.png" style="width: 64rpx;height: 64rpx;" class="mt15"></image>
+		</view>
+	</view>
+</view>
