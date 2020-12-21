@@ -1,0 +1,101 @@
+<!--pages/equipment/equipment.wxml-->
+<view class="main bg-white">
+	<view class="bg-eq plr30 border-box">
+		<!-- search-box -->
+		<view class="justbetween center-item search-box p10 border-box">
+			<image src="../../img/icon_search.png" class="v-middle" style="width: 44rpx;height: 44rpx;"></image>
+			<input bindconfirm='searchShop' bindblur='searchShop' confirm-type='search' value="{{searchText}}" type="text" class="flexItem plr10"
+			 placeholder="关键词查询" />
+			<image src="../../img/scan.png" style="width: 42rpx;height: 42rpx;"></image>
+		</view>
+		<!--  -->
+		<view class="justbetween c-white mt20">
+			<view class="flexBox center-item">
+				<text class="tip-line bg-white"></text>
+				<view class="f12 plr10">在线总数:<text class="f16">123</text>(台)</view>
+			</view>
+			<view class="flexBox center-item">
+				<text class="f12 plr10">已绑:<text class="f16">123</text>(台)</text>
+				<text class="f12">未绑:<text class="f16">123</text>(台)</text>
+			</view>
+		</view>
+	</view>
+	<!-- list -->
+	<scroll-view scroll-y="true" class='list-box prelative plr30 border-box'>
+		<!-- 未绑定 -->
+		<!-- wx:for -->
+		<view class="list-item bg-white plr15 ptb10 border-box">
+			<view class="justbetween center-item">
+				<view class="justbetween center-item">
+					<view class="f15 c-33">SN码:<text class="f16">123123123</text></view>
+					<!-- 是否绑定 -->
+					<!-- <block>
+						<view wx:if="{{item.XX}}" class="f12 plr5" style="color: #35DD9C;">已绑定</view>
+						<view wx:else class="f12 plr5" style="color: #F35959;">未绑定</view>
+					</block> -->
+					<view class="f12 plr5" style="color: #F35959;">未绑定</view>
+				</view>
+				<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+			</view>
+			<view class="mt10">
+				<image src="../../img/icon_ad.png" style="width: 16rpx;height: 16rpx;"></image>
+				<text class="plr5 c-99 f12">小酒窝酒馆（福永店）</text>
+			</view>
+			<view class="justbetween center-item bt1 ptb10">
+				<view>
+					<image src="../../img/icon_kind.png" style="width: 16rpx;height: 16rpx;"></image>
+					<text class="plr5 c-99 f12">8口</text>
+				</view>
+				<view>
+					<text class="f12 c-99">可借:<text class="f15 c-33">1</text></text>
+					<text class="f12 c-99 plr10">可还:<text class="f15 c-33">1</text></text>
+					<text class="f12 c-99">在线时长:<text class="f15 c-33 plr5">1小时25分</text></text>
+				</view>
+			</view>
+			<view class="mt10 justbetween">
+				<view></view>
+				<view class="btn-bind btn-list tc">绑定设备</view>
+				<!-- 是否绑定 -->
+				<!-- <block>
+					<view wx:if='{{item.XX}}' class="flexBox center-item">
+						<view class="btn-voice btn-list tc mlr10">调节音量</view>
+						<view class="btn-unbind btn-list tc">解绑设备</view>
+					</view>
+					<view wx:else class="btn-bind btn-list tc">绑定设备</view>
+				</block> -->
+			</view>
+		</view>
+		<!-- 已绑定 -->
+		<view class="list-item bg-white plr15 ptb10 border-box mt10">
+			<view class="justbetween center-item">
+				<view class="justbetween center-item">
+					<view class="f15 c-33">SN码:<text class="f16">123123123</text></view>
+					<view class="f12 plr5" style="color: #35DD9C;">已绑定</view>
+				</view>
+				<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+			</view>
+			<view class="mt10">
+				<image src="../../img/icon_ad.png" style="width: 16rpx;height: 16rpx;"></image>
+				<text class="plr5 c-99 f12">小酒窝酒馆（福永店）</text>
+			</view>
+			<view class="justbetween center-item bt1 ptb10">
+				<view>
+					<image src="../../img/icon_kind.png" style="width: 16rpx;height: 16rpx;"></image>
+					<text class="plr5 c-99 f12">8口</text>
+				</view>
+				<view>
+					<text class="f12 c-99">可借:<text class="f15 c-33">1</text></text>
+					<text class="f12 c-99 plr10">可还:<text class="f15 c-33">1</text></text>
+					<text class="f12 c-99">在线时长:<text class="f15 c-33 plr5">1小时25分</text></text>
+				</view>
+			</view>
+			<view class="mt10 justbetween">
+				<view></view>
+				<view class="flexBox center-item">
+					<view class="btn-voice btn-list tc mlr10">调节音量</view>
+					<view class="btn-unbind btn-list tc">解绑设备</view>
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+</view>

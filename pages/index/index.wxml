@@ -11,12 +11,12 @@
 		</view>
 		<view class="flexBox center-item tc mt10">
 			<view class="flexItem">
-				<view class="f24">100</view>
+				<view class="f24 fb">100</view>
 				<view class="f12">今日收益</view>
 			</view>
 			<view class="line-white" style="height: 85rpx;"></view>
 			<view class="flexItem">
-				<view class="f24">100</view>
+				<view class="f24 fb">100</view>
 				<view class="f12">可提现余额</view>
 			</view>
 		</view>
@@ -57,7 +57,7 @@
 			</view>
 		</view>
 		<!-- 设备状态 -->
-		<view class="">设备状态</view>
+		<view class="mt10 f16 c-33 fb">设备状态</view>
 		<view class="justbetween center-item mt10 c-white">
 			<view class="state-card border-box p10 prelative">
 				<text class="f16 c-33">221</text>
@@ -75,6 +75,6 @@
 				<image src="../../img/index_card3.png" class="card-bg"></image>
 			</view>
 		</view>
-		<view class="mt10">近一周收益(元)</view>
+		<view class="mt10 f16 c-33 fb">近一周收益(元)</view>
 	</view>
 </view>

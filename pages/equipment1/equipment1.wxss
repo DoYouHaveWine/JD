@@ -1,0 +1,51 @@
+/* pages/equipment/equipment.wxss */
+.bg-eq {
+	height: 370rpx;
+	background: linear-gradient(180deg, #3F8DFC 0%, #76D3FE 100%);
+}
+
+.search-box {
+	height: 100rpx;
+	background: #F5F5F5;
+	border-radius: 20rpx;
+}
+
+.tip-line {
+	display: inline-block;
+	width: 8rpx;
+	height: 34rpx;
+	border-radius: 2px;
+}
+
+.list-box {
+	height: calc(100vh - 250rpx);
+	top: -130rpx;
+	background: transparent;
+}
+
+.list-item {
+	box-shadow: 3px 7px 10px 0px rgba(45, 66, 95, 0.1);
+	border-radius: 30rpx;
+}
+
+.btn-list {
+	width: 180rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	border-radius: 14rpx;
+}
+
+.btn-bind {
+	background: #F1F5FA;
+	color: #418EFC;
+}
+
+.btn-voice {
+	background: #EBFDF6;
+	color: #35DD9C;
+}
+
+.btn-unbind {
+	background: #FFEBE5;
+	color: #F35959;
+}

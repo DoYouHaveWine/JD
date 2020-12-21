@@ -1,39 +1,46 @@
 {
-	"pages": [
-		"pages/login/login",
-		"pages/index/index",
-		"pages/logs/logs",
-		"pages/forget/forget",
-		"pages/personal/personal",
-		"pages/manage/manage"
-	],
-	"window": {
-		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#fff",
-		"navigationBarTitleText": "Weixin",
-		"navigationBarTextStyle": "black"
-	},
-	"style": "v2",
-	"sitemapLocation": "sitemap.json",
-	"tabBar": {
-		"color": "#9CA4B6",
-		"selectedColor": "#418EFC",
-		"backgroundColor": "#ffffff",
-		"list": [{
-			"pagePath": "pages/index/index",
-			"text": "管理首页",
-			"iconPath": "/img/icon_index.png",
-			"selectedIconPath": "/img/icon_indexactive.png"
-		}, {
-			"pagePath": "pages/manage/manage",
-			"text": "管控中心",
-			"iconPath": "/img/icon_manage.png",
-			"selectedIconPath": "/img/icon_manageactive.png"
-		}, {
-			"pagePath": "pages/personal/personal",
-			"text": "个人中心",
-			"iconPath": "/img/icon_personal.png",
-			"selectedIconPath": "/img/icon_personalactive.png"
-		}]
-	}
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/forget/forget",
+    "pages/personal/personal",
+    "pages/manage/manage",
+    "pages/equipment1/equipment1",
+    "pages/equipment2/equipment2",
+    "pages/equipment3/equipment3"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#9CA4B6",
+    "selectedColor": "#418EFC",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "管理首页",
+        "iconPath": "/img/icon_index.png",
+        "selectedIconPath": "/img/icon_indexactive.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "管控中心",
+        "iconPath": "/img/icon_manage.png",
+        "selectedIconPath": "/img/icon_manageactive.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/img/icon_personal.png",
+        "selectedIconPath": "/img/icon_personalactive.png"
+      }
+    ]
+  }
 }
