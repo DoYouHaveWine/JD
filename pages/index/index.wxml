@@ -1,13 +1,80 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="main border-box">
+	<view class="count-box border-box c-white">
+		<view class="justbetween center-item">
+			<view class="flexBox center-item">
+				<image src="../../img/icon_count.png" style="width: 20rpx;height: 20rpx;"></image>
+				<text class="f16 plr5">今日数据</text>
+				<image src="../../img/onB.png" style="width: 32rpx;height: 24rpx;"></image>
+			</view>
+			<view class="f12">商家总数(家) 5560</view>
+		</view>
+		<view class="flexBox center-item tc mt10">
+			<view class="flexItem">
+				<view class="f24">100</view>
+				<view class="f12">今日收益</view>
+			</view>
+			<view class="line-white" style="height: 85rpx;"></view>
+			<view class="flexItem">
+				<view class="f24">100</view>
+				<view class="f12">可提现余额</view>
+			</view>
+		</view>
+	</view>
+	<view class="plr15">
+		<view class="card-box">
+			<view class="justbetween">
+				<view class="earn-card flexBox center-item">
+					<image src="../../img/icon_card1.png" class="earn-img plr10"></image>
+					<view>
+						<view class="f12 c-99">本月收益(元)</view>
+						<view class="mt5 f20 c-33">100</view>
+					</view>
+				</view>
+				<view class="earn-card flexBox center-item">
+					<image src="../../img/icon_card2.png" class="earn-img plr10"></image>
+					<view>
+						<view class="f12 c-99">本月成功订单(笔)</view>
+						<view class="mt5 f20 c-33">100</view>
+					</view>
+				</view>
+			</view>
+			<view class="justbetween mt10">
+				<view class="earn-card flexBox center-item">
+					<image src="../../img/icon_card3.png" class="earn-img plr10"></image>
+					<view>
+						<view class="f12 c-99">累计收益(元)</view>
+						<view class="mt5 f20 c-33">100</view>
+					</view>
+				</view>
+				<view class="earn-card flexBox center-item">
+					<image src="../../img/icon_card4.png" class="earn-img plr10"></image>
+					<view>
+						<view class="f12 c-99">累计成功订单(笔)</view>
+						<view class="mt5 f20 c-33">100</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 设备状态 -->
+		<view class="">设备状态</view>
+		<view class="justbetween center-item mt10 c-white">
+			<view class="state-card border-box p10 prelative">
+				<text class="f16 c-33">221</text>
+				<view class="f12 c-99">在线设备(台)></view>
+				<image src="../../img/index_card1.png" class="card-bg"></image>
+			</view>
+			<view class="state-card border-box p10 prelative">
+				<text class="f16" style="color: #F9961D;">221</text>
+				<view class="f12 c-99">离线设备(台)></view>
+				<image src="../../img/index_card2.png" class="card-bg"></image>
+			</view>
+			<view class="state-card border-box p10 prelative">
+				<text class="f16" style="color: #F35959;">221</text>
+				<view class="f12 c-99">超时离线(台)></view>
+				<image src="../../img/index_card3.png" class="card-bg"></image>
+			</view>
+		</view>
+		<view class="mt10">近一周收益(元)</view>
+	</view>
 </view>

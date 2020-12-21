@@ -227,7 +227,11 @@
   width: 1px;
   background: #ddd;
 }
-
+.line-white {
+  height: 100hv;
+  width: 1px;
+  background: #fff;
+}
 .ptb5 {
   padding-top: 10rpx;
   padding-bottom: 10rpx;
