@@ -1,0 +1,14 @@
+<view class="main plr15 border-box">
+	<navigator class="flexBox center-item search-box plr20 border-box mt15">
+		<image src="../../img/icon_search.png" class="v-middle" style="width: 44rpx;height: 44rpx;"></image>
+		<text class="plr10" style="color: #A5B1C4;">搜索商家</text>
+	</navigator>
+	<view class="mt10">
+		<view class="flexBox center-item">
+			<text class="line-blue dib"></text>
+			<text class="c-33 f16 fb plr10">商家总数:</text>
+			<text class="f24 fb" style="color: #418EFC;">2148</text>
+			<text class="f12 c-33">(家)</text>
+		</view>
+	</view>
+</view>

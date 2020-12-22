@@ -8,7 +8,11 @@
     "pages/manage/manage",
     "pages/equipment1/equipment1",
     "pages/equipment2/equipment2",
-    "pages/equipment3/equipment3"
+    "pages/equipment3/equipment3",
+    "pages/agent/agent",
+    "pages/shop/shop",
+    "pages/agentsch/agentsch",
+    "pages/shopsch/shopsch"
   ],
   "window": {
     "backgroundTextStyle": "light",
