@@ -1,2 +1,16 @@
-<!--pages/personal/personal.wxml-->
-<text>pages/personal/personal.wxml</text>
+<view class="main plr15 border-box">
+	<view class="mt10 flexBox center-item"><text class="line-blue dib"></text><text class="plr10">常用功能</text></view>
+	<view class="card-box center-item">
+		<view wx:for="{{kinds1}}" class="card-item tc border-box ptb15 mt10">
+			<image src="{{item.src}}" style="width: 80rpx;height: 80rpx;"></image>
+			<view class="f15 c-33 mt5">{{item.text}}</view>
+		</view>
+	</view>
+	<view class="mt10 flexBox center-item"><text class="line-blue dib"></text><text class="plr10">更多</text></view>
+	<view class="card-box center-item">
+		<view wx:for="{{kinds2}}" class="card-item tc border-box ptb15 mt10">
+			<image src="{{item.src}}" style="width: 80rpx;height: 80rpx;"></image>
+			<view class="f15 c-33 mt5">{{item.text}}</view>
+		</view>
+	</view>
+</view>
