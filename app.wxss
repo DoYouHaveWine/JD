@@ -92,6 +92,12 @@
 .c-3F8DFC{
 	color: #3F8DFC;
 }
+.c-F9961D{
+	color: #F9961D;
+}
+.c-418EFC{
+	color: #418EFC;
+}
 .border-circle {
   border-radius: 50%;
 }

@@ -4,3 +4,27 @@
 	background: #F5F5F5;
 	border-radius: 20rpx;
 }
+.shop-view{
+	height: calc(100vh - 230rpx);
+}
+.list-items{
+	box-shadow: 3rpx 7rpx 14rpx 0px rgba(45, 66, 95, 0.1);
+	border-radius: 30rpx;
+}
+.icon-switch{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+.btn-list {
+	width: 180rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	border-radius: 14rpx;
+}
+
+.btn-bind {
+	background: #F1F5FA;
+	color: #418EFC;
+}

@@ -5,7 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+ifList:false,
+testList:[
+	{
+		name:'小家',
+		phone:'12345678951',
+		data1:'15',
+		data2:'2200.00',
+		status:false
+	},{
+		name:'小家',
+		phone:'12345678951',
+		data1:'15',
+		data2:'2200.00',
+		status:false
+	}
+]
   },
 
   /**
@@ -62,5 +77,12 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+	switch(e){
+		let index = e.currentTarget.dataset.index
+		let stage = 'testList[' + index + '].status'
+		this.setData({
+		  [stage]: !this.data.testList[index].status
+		})
+	}
 })
