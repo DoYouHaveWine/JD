@@ -12,7 +12,8 @@
     "pages/agent/agent",
     "pages/shop/shop",
     "pages/agentsch/agentsch",
-    "pages/shopsch/shopsch"
+    "pages/shopsch/shopsch",
+    "pages/count/count"
   ],
   "window": {
     "backgroundTextStyle": "light",

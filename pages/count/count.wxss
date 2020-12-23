@@ -1,0 +1,28 @@
+/* pages/count/count.wxss */
+.search-box {
+	height: 100rpx;
+	background: #F5F5F5;
+	border-radius: 20rpx;
+}
+
+.count-item {
+	height: 120rpx;
+	box-shadow: 3rpx 7rpx 14rpx 0px rgba(45, 66, 95, 0.1);
+	border-radius: 30rpx;
+}
+
+.btn-box {
+	width: 440rpx;
+	height: 60rpx;
+	background: #F1F5FA;
+	color: #3F8DFC;
+	border-radius: 50px;
+}
+.btn-box>view{
+	border-radius: 50px;
+	line-height: 60rpx;
+}
+.active{
+	background: #3F8DFC;
+	color: #ffffff;
+}

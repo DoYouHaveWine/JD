@@ -1,0 +1,56 @@
+<!--pages/count/count.wxml-->
+<view class="main bg-white plr15 border-box">
+	<!-- search-box -->
+	<view class="justbetween center-item search-box p10 border-box">
+		<image src="../../img/icon_search.png" class="v-middle" style="width: 44rpx;height: 44rpx;"></image>
+		<input bindconfirm='searchShop' bindblur='searchShop' confirm-type='search' value="{{searchText}}" type="text" class="flexItem plr10"
+		 placeholder="搜索充电宝" />
+	</view>
+	<!--  -->
+	<view class="mt10" style="height: 80rpx;">
+		<view class="flexBox center-item">
+			<text class="line-blue dib"></text>
+			<text class="c-33 f16 fb plr10">充电宝总数:</text>
+			<text class="f24 fb" style="color: #418EFC;">2148</text>
+			<text class="f12 c-33">(个)</text>
+		</view>
+	</view>
+	<view class="tc prelative" style="height: 60rpx;">
+		<view class="btn-box flexBox center-item f16" style="position: absolute;left: 50%;transform: translateX(-50%);">
+			<view class="flexItem {{showBox?'active':''}}" bindtap='showf'>正常电宝</view>
+			<view class="flexItem {{!showBox?'active':''}}" bindtap='shows'>超额电宝</view>
+		</view>
+	</view>
+	<block>
+		<view wx:if="{{showBox}}">
+			<view class="plr15 ptb10 count-item mt10 justbetween center-item border-box">
+				<view class="flexBox center-item">
+					<image src="../../img/bao.png" style="width: 40rpx;height: 40rpx;"></image>
+					<view class="plr10">
+						<text class="f12 c-99">电宝ID</text>
+						<view class="f15 c-33">K102123123123</view>
+					</view>
+				</view>
+				<view>
+					<text class="f12 c-33">使用次数</text>
+					<view class="f18" style="color: #FEB41F;">102<text class="f12 c-33">(次)</text></view>
+				</view>
+			</view>
+		</view>
+		<view wx:else>
+			<view class="plr15 ptb10 count-item mt10 justbetween center-item border-box">
+				<view class="flexBox center-item">
+					<image src="../../img/bao.png" style="width: 40rpx;height: 40rpx;"></image>
+					<view class="plr10">
+						<text class="f12 c-99">电宝ID</text>
+						<view class="f15 c-33">K102123123123</view>
+					</view>
+				</view>
+				<view>
+					<text class="f12 c-33">使用次数</text>
+					<view class="f18" style="color: #FEB41F;">101<text class="f12 c-33">(次)</text></view>
+				</view>
+			</view>
+		</view>
+	</block>
+</view>
