@@ -1,13 +1,17 @@
 /* pages/personal/personal.wxss */
-.card-box{
-	display: flex;
-	flex-flow:row wrap;
-	justify-content: space-between;
+.card-invent{
+	background: #F1F5FA;
+	border-radius: 5px;
+	width: 330rpx;
 }
-.card-item{
-	width: 200rpx;
-	height: 210rpx;
-	background: #FFFFFF;
-	box-shadow: 3px 7px 38px 0px rgba(45, 66, 95, 0.1);
-	border-radius: 10rpx;
+.card-notice{
+	background: #FEFAE7;
+	border-radius: 5px;
+	width: 330rpx;
+}
+.p-items{
+	/* height: 120rpx; */
+	background: #F8F9FB;
+	box-shadow: 3rpx 7rpx 14rpx 0px rgba(45, 66, 95, 0.1);
+	border-radius: 30rpx;
 }

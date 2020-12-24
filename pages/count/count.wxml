@@ -38,7 +38,7 @@
 			</view>
 		</view>
 		<view wx:else>
-			<view class="plr15 ptb10 count-item mt10 justbetween center-item border-box">
+			<view class="plr15 ptb10 count-item mt10 justbetween center-item border-box prelative">
 				<view class="flexBox center-item">
 					<image src="../../img/bao.png" style="width: 40rpx;height: 40rpx;"></image>
 					<view class="plr10">
@@ -48,8 +48,9 @@
 				</view>
 				<view>
 					<text class="f12 c-33">使用次数</text>
-					<view class="f18" style="color: #FEB41F;">101<text class="f12 c-33">(次)</text></view>
+					<view class="f18" style="color: #F8696D;">101<text class="f12 c-33">(次)</text></view>
 				</view>
+				<image src="../../img/chaoe.png" style="position: absolute;top: 0;right: 0;width: 70rpx;height: 70rpx;"></image>
 			</view>
 		</view>
 	</block>

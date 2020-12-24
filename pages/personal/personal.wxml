@@ -1,16 +1,73 @@
 <view class="main plr15 border-box">
-	<view class="mt10 flexBox center-item"><text class="line-blue dib"></text><text class="plr10">常用功能</text></view>
-	<view class="card-box center-item">
-		<view wx:for="{{kinds1}}" class="card-item tc border-box ptb15 mt10">
-			<image src="{{item.src}}" style="width: 80rpx;height: 80rpx;"></image>
-			<view class="f15 c-33 mt5">{{item.text}}</view>
+	<view class="justbetween center-item">
+		<view class="">
+			<text class="c-33 f24 fb">12542154852</text>
+			<view class="c-99 f16 mt5">王阿斯顿</view>
+		</view>
+		<view>
+			<image src="../../img/p_head.png" style="width: 168rpx;height: 168rpx;"></image>
 		</view>
 	</view>
-	<view class="mt10 flexBox center-item"><text class="line-blue dib"></text><text class="plr10">更多</text></view>
-	<view class="card-box center-item">
-		<view wx:for="{{kinds2}}" class="card-item tc border-box ptb15 mt10">
-			<image src="{{item.src}}" style="width: 80rpx;height: 80rpx;"></image>
-			<view class="f15 c-33 mt5">{{item.text}}</view>
+	<view class="justbetween">
+		<view class="card-invent justbetween p10 border-box">
+			<view class="flexBox center-item">
+				<image src="../../img/icon_yq.png" style="width: 58rpx;height: 58rpx;"></image>
+				<text class="f15 c-33 plr5">邀请码</text>
+			</view>
+			<view class="flexBox center-item">
+				<text class="f12 c-99 plr5">推广</text>
+				<image src="../../img/icon_next.png" style="width: 16rpx;height: 16rpx;"></image>
+			</view>
+		</view>
+		<view class="card-notice justbetween p10 border-box">
+			<view class="flexBox center-item">
+				<image src="../../img/icon_tz.png" style="width: 58rpx;height: 58rpx;"></image>
+				<text class="f15 c-33 plr5">通知</text>
+			</view>
+			<view class="flexBox center-item">
+				<text class="f12 c-99 plr5">暂无</text>
+				<image src="../../img/icon_next.png" style="width: 16rpx;height: 16rpx;"></image>
+			</view>
+		</view>
+	</view>
+	<view class="mt20">
+		<view class="p-items justbetween center-item p10 border-box">
+			<view class="flexBox center-item">
+				<image src="../../img/icon_p1.png" style="width: 86rpx;height: 86rpx;"></image>
+				<text class="f15 c-33 plr10">个人信息</text>
+			</view>
+			<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+		</view>
+		<view class="p-items justbetween center-item p10 border-box mt5">
+			<view class="flexBox center-item">
+				<image src="../../img/icon_p2.png" style="width: 86rpx;height: 86rpx;"></image>
+				<text class="f15 c-33 plr10">实名认证</text>
+			</view>
+			<view class="flexBox center-item">
+				<text class="f15 c-99 plr5">未认证</text>
+				<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+			</view>
+		</view>
+		<view class="p-items justbetween center-item p10 border-box mt5">
+			<view class="flexBox center-item">
+				<image src="../../img/icon_p3.png" style="width: 86rpx;height: 86rpx;"></image>
+				<text class="f15 c-33 plr10">修改密码</text>
+			</view>
+			<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+		</view>
+		<view class="p-items justbetween center-item mt10 p10 border-box">
+			<view class="flexBox center-item">
+				<image src="../../img/icon_p4.png" style="width: 86rpx;height: 86rpx;"></image>
+				<text class="f15 c-33 plr10">我的地址</text>
+			</view>
+			<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+		</view>
+		<view class="p-items justbetween center-item mt10 p10 border-box">
+			<view class="flexBox center-item">
+				<image src="../../img/icon_p5.png" style="width: 86rpx;height: 86rpx;"></image>
+				<text class="f15 c-33 plr10">退出登录</text>
+			</view>
+			<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
 		</view>
 	</view>
 </view>

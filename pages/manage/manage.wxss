@@ -1,1 +1,13 @@
-/* pages/manage/manage.wxss */
+/* pages/personal/personal.wxss */
+.card-box{
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: space-between;
+}
+.card-item{
+	width: 200rpx;
+	height: 210rpx;
+	background: #FFFFFF;
+	box-shadow: 3px 7px 38px 0px rgba(45, 66, 95, 0.1);
+	border-radius: 10rpx;
+}
