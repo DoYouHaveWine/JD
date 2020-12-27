@@ -1,0 +1,27 @@
+.point-y{
+	background: #FEB41F;
+	border-radius: 50%;
+	width: 10rpx;
+	height: 10rpx;
+}
+.btn-in{
+	width: 120rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	border-radius: 5px;
+}
+.img-in{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.in-content{
+	width: 400rpx;
+}
+.withdrawal{
+	height: 100rpx;
+	line-height: 100rpx;
+	background: linear-gradient(-6deg, #3F8DFC 0%, #76D3FE 100%);
+	border-radius: 15px;
+}

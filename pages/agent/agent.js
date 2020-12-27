@@ -84,5 +84,22 @@ testList:[
 		this.setData({
 		  [stage]: !this.data.testList[index].status
 		})
+	},
+	call(e){
+		const phoneNum = e.currentTarget.dataset.phone
+		wx.showModal({
+		  title: phoneNum,
+		  content: '是否拨打该代理商电话号码',
+		  success (res) {
+		    if (res.confirm) {
+		      console.log('用户点击确定')
+			  wx.makePhoneCall({
+			    phoneNumber: phoneNum //仅为示例，并非真实的电话号码
+			  })
+		    } else if (res.cancel) {
+		      console.log('用户点击取消')
+		    }
+		  }
+		})
 	}
 })

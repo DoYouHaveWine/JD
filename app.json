@@ -13,7 +13,11 @@
     "pages/shop/shop",
     "pages/agentsch/agentsch",
     "pages/shopsch/shopsch",
-    "pages/count/count"
+    "pages/count/count",
+    "pages/change/change",
+    "pages/shopin1/shopin1",
+    "pages/shopin2/shopin2",
+    "pages/shopin3/shopin3"
   ],
   "window": {
     "backgroundTextStyle": "light",

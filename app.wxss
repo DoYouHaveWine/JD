@@ -179,7 +179,10 @@
 .center-item {
   align-items: center;
 }
-
+.just-center{
+	display: flex;
+	justify-content: center;
+}
 .bg-238 {
   background: rgb(238, 238, 238);
 }

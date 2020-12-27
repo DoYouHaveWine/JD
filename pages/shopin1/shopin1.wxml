@@ -1,0 +1,125 @@
+<view class="main plr10 ptb30 border-box">
+	<view class="flexBox center-item">
+		<text class="line-blue dib"></text>
+		<text class="f16 c-33 plr10">商家基础信息</text>
+		<text class="f14 c-99">(必填)</text>
+	</view>
+	<view class="plr20">
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">商家类型:</text>
+			</view>
+			<view class="flexBox center-item in-content">
+				<view class="btn-in prelative tc" bindtap="choicekinds1">
+					<block>
+						<image wx:if="{{inkind1}}" src="../../img/btn_bg_active.png" class="btn-in img-in"></image>
+						<image wx:else src="../../img/btn_bg_normal.png" class="btn-in img-in"></image>
+					</block>
+					<text class="f15 {{inkind1?'c-white':'c-99'}}" style="z-index: 99;">自营</text>
+				</view>
+				<view class="btn-in prelative tc mlr10" bindtap="choicekinds2">
+					<block>
+						<image wx:if="{{inkind2}}" src="../../img/btn_bg_active.png" class="btn-in img-in"></image>
+						<image wx:else src="../../img/btn_bg_normal.png" class="btn-in img-in"></image>
+					</block>
+					<text class="f15 {{inkind2?'c-white':'c-99'}}" style="z-index: 99;">代开</text>
+				</view>
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">商家名称:</text>
+			</view>
+			<view class="in-content">
+				<input type="text" placeholder="请输入商家名称" />
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">行业:</text>
+			</view>
+			<view class="justbetween center-item in-content">
+				<picker mode="selector" bindchange="bindType" range="{{types}}" range-key="name">
+					<view class="picker c-66">
+						<text>{{ industry ? industry : '点击选择行业' }}</text>
+					</view>
+				</picker>
+				<image src="../../img/icon_next.png" style="width: 16rpx;height: 16rpx;"></image>
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">营业时间:</text>
+			</view>
+			<view class="in-content"></view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">联系人姓名:</text>
+			</view>
+			<view class="in-content">
+				<input type="text" placeholder="请输入联系人姓名" />
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">手机号码:</text>
+			</view>
+			<view class="in-content">
+				<input type="text" placeholder="请输入联系人手机号码" />
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">商户地址:</text>
+			</view>
+			<view class="in-content justbetween center-item" bindtap="chooseLocation">
+				<text class="c-66">{{location}}</text>
+				<image src="../../img/location.png" style="width: 30rpx;height: 36rpx;"></image>
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">所属区域:</text>
+			</view>
+			<view class="in-content">
+					<picker mode="region" bindchange="bindRegionChange" value="{{shopInData.city}}">
+					<view class="c-66">
+						<text>{{ shopInData.city ? shopInData.city : '选择省、市、区' }}</text>
+					</view>
+				</picker>
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">详细地址:</text>
+			</view>
+			<view class="in-content">
+				<input type="text" placeholder="请输入详细街道门牌信息" />
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">是否显示分润:</text>
+			</view>
+			<view class="in-content fr">
+				<view>
+				<switch></switch>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="mt20 plr10 ptb20 tc">
+		<view class="withdrawal tc f20 fb mt10 c-white">下一页</view>
+	</view>
+</view>

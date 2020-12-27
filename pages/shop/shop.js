@@ -5,7 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+ifList:false,
+testList:[
+	{
+		name:'小家',
+		phone:'12345678951',
+		data1:'15',
+		data2:'2200.00',
+		status:false,
+		time:'2020-12-05'
+	},{
+		name:'小家',
+		phone:'12345678951',
+		data1:'15',
+		data2:'2200.00',
+		status:false,
+		time:'2020-12-05'
+	}
+]
   },
 
   /**
@@ -62,5 +79,41 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  switch(e){
+  	let index = e.currentTarget.dataset.index
+  	let stage = 'testList[' + index + '].status'
+  	this.setData({
+  	  [stage]: !this.data.testList[index].status
+  	})
+  },
+  bind(e){
+	  wx.showModal({
+	    title: 'DJ1321313',
+	    content: '是否绑定该设备到商家名下',
+		confirmText:'绑定',
+	    success (res) {
+	      if (res.confirm) {
+	        console.log('用户点击确定')
+	      } else if (res.cancel) {
+	        console.log('用户点击取消')
+	      }
+	    }
+	  })
+  },
+  unbind(e){
+	  wx.showModal({
+	    title: 'DJ1321313',
+	    content: '是否解绑该设备',
+		confirmText:'解绑',
+		confirmColor:'#F35959',
+	    success (res) {
+	      if (res.confirm) {
+	        console.log('用户点击确定')
+	      } else if (res.cancel) {
+	        console.log('用户点击取消')
+	      }
+	    }
+	  })
   }
 })

@@ -1,4 +1,3 @@
-/* pages/agent/agent.wxss */
 .search-box {
 	height: 100rpx;
 	background: #F5F5F5;

@@ -11,4 +11,89 @@
 			<text class="f12 c-33">(家)</text>
 		</view>
 	</view>
+	<view class="tc" wx:if='{{ifList}}'>
+		<image src="../../img/order_none.png" style="width: 100;height: 464rpx;margin-top: 150rpx;"></image>
+		<view class="f14 c-33 mt10">您还没有添加商家哦</view>
+	</view>
+	<!-- <scroll-view scroll-y="true" class='shop-view plr15 border-box'></scroll-view> -->
+	<view class='shop-view plr15 border-box ptb10'>
+		<!-- wx:for -->
+		<view wx:for="{{testList}}" wx:key="index" class="list-items bg-white p10 border-box prelative mt10">
+			<view class="justbetween">
+				<view class="flexBox center-item">
+					<image src="../../img/head_default.png" style="width: 78rpx;height: 78rpx;"></image>
+					<text class="plr10 c-33 f16 fb">{{item.name}}</text>
+				</view>
+				<view class="flexBox center-item">
+					<text class="plr10 c-99 f12">{{item.time}}入驻</text>
+					<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+				</view>
+			</view>
+			<view class="plr30">
+				<image src="../../img/icon_ad.png" style="width: 16rpx;height: 16rpx;"></image>
+				<text class="plr5 c-99 f12">小酒窝酒馆</text>
+			</view>
+			<view class="plr30">
+				<image src="../../img/icon_ad.png" style="width: 16rpx;height: 16rpx;"></image>
+				<text class="plr5 c-99 f12">广东省深圳市宝安区新沙路666号</text>
+			</view>
+			<view class="box-height tc mt5 bt1 ptb10">
+				<view class="flexBox">
+					<view class="flexItem">
+						<view class="fb f16 c-F9961D">{{item.data2}}</view>
+						<text class="f12 c-99">今日收益</text>
+					</view>
+					<view class="flexItem">
+						<view class="fb f16 c-F9961D">{{item.data2}}</view>
+						<text class="f12 c-99">本月收益</text>
+					</view>
+					<view class="flexItem">
+						<view class="fb f16 c-418EFC">{{item.data2}}</view>
+						<text class="f12 c-99">设备数量</text>
+					</view>
+				</view>
+				<block wx:if="{{item.status}}">
+					<view class="flexBox mt5">
+						<view class="flexItem">
+							<view class="fb f16 c-F9961D">{{item.data2}}</view>
+							<text class="f12 c-99">本月收益</text>
+						</view>
+						<view class="flexItem">
+							<view class="fb f16 c-F9961D">{{item.data2}}</view>
+							<text class="f12 c-99">代理分润</text>
+						</view>
+						<view class="flexItem">
+							<view class="fb f16 c-F9961D">{{item.data2}}</view>
+							<text class="f12 c-99">商家分润</text>
+						</view>
+					</view>
+					<view wx:if="{{item.status}}" class="flexBox mt5">
+						<view class="flexItem">
+							<view class="fb f16 c-418EFC">{{item.data2}}</view>
+							<text class="f12 c-99">租赁订单数</text>
+						</view>
+						<view class="flexItem"></view>
+						<view class="flexItem"></view>
+					</view>
+				</block>
+			</view>
+			<view class="mt10 justbetween mb10">
+				<view></view>
+				<view class="flexBox center-item f15">
+					<view class="btn-bind btn-list mlr10 just-center center-item" bindtap="bind">
+						<image src="../../img/scan.png" style="width: 32rpx;height: 32rpx;"></image>
+						<text class="plr5">设备绑定</text>
+					</view>
+					<view class="btn-unbind btn-list just-center center-item" bindtap="unbind">
+						<image src="../../img/scan.png" style="width: 32rpx;height: 32rpx;"></image>
+						<text class="plr5">设备解绑</text>
+					</view>
+				</view>
+			</view>
+			<view class="icon-switch" bindtap="switch" data-index="{{index}}">
+				<image wx:if="{{item.status}}" src="../../img/icon_up.png" style="width: 26rpx;height: 12rpx;"></image>
+				<image wx:else src="../../img/icon_down.png" style="width: 26rpx;height: 12rpx;"></image>
+			</view>
+		</view>
+	</view>
 </view>

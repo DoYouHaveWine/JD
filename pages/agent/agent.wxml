@@ -25,7 +25,7 @@
 					<image src="../../img/head_default.png" style="width: 78rpx;height: 78rpx;"></image>
 					<text class="plr10 c-33 f16 fb">{{item.name}}</text>
 				</view>
-				<view class="flexBox center-item">
+				<view class="flexBox center-item" bindtap="call" data-phone="{{item.phone}}">
 					<image src="../../img/icon_phone.png" style="width: 30rpx;height: 30rpx;"></image>
 					<text class="plr10 c-33 f16 fb">{{item.phone}}</text>
 					<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
@@ -56,7 +56,7 @@
 					<text class="f12 c-99 plr10">电宝分润:<text class="f15 c-3EE156">{{item.data1}}</text></text>
 					<text class="f12 c-99">线充分润:<text class="f15 c-3EE156 plr5">{{item.data1}}</text></text>
 				</view>
-				<view class="btn-bind btn-list tc">
+				<view class="btn-bind btn-list just-center center-item">
 					<text class="plr5 f15">修改</text>
 					<image src="../../img/icon_nextb.png" style="width: 15rpx;height: 26rpx;"></image>
 				</view>

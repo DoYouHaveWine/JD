@@ -1,2 +1,26 @@
-<!--pages/agentsch/agentsch.wxml-->
-<text>pages/agentsch/agentsch.wxml</text>
+<view class="main bg-white">
+	<view class="bg-eq plr30 border-box">
+		<!-- search-box -->
+		<view class="justbetween center-item search-box p10 border-box bg-238">
+			<image src="../../img/icon_search.png" class="v-middle" style="width: 44rpx;height: 44rpx;"></image>
+			<input bindconfirm='searchShop' bindblur='searchShop' confirm-type='search' value="{{searchText}}" type="text" class="flexItem plr10"
+			 placeholder="请输入代理商信息" />
+		</view>
+	</view>
+	<view class="plr30">
+		<view class="mt10">
+			<view class="c-99 f16">最近常用</view>
+			<view class="justbetween bt1 ptb5 mt10">
+				<text>张三</text>
+				<text>1352458541</text>
+			</view>
+		</view>
+		<view class="mt10">
+			<view class="c-99 f16">代理商</view>
+			<view class="justbetween bt1 ptb5 mt10">
+				<text>张三</text>
+				<text>1352458541</text>
+			</view>
+		</view>
+	</view>
+</view>
