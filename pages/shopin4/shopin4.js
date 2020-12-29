@@ -1,11 +1,11 @@
-// pages/shopin2/shopin2.js
+// pages/shopin4/shopin4.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+boxShow:true
   },
 
   /**
@@ -62,8 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  radioChange(e){
-	  console.log(e)
   }
 })

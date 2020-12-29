@@ -1,2 +1,62 @@
-<!--pages/shopin2/shopin2.wxml-->
-<text>pages/shopin2/shopin2.wxml</text>
+<view class="main plr10 ptb30 border-box">
+	<view class="flexBox center-item">
+		<text class="line-blue dib"></text>
+		<text class="f16 c-33 plr10">充电宝分润</text>
+	</view>
+	<view class="plr20">
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">分润比例:</text>
+			</view>
+			<view class="justbetween center-item in-content">
+				<view class="flexBox center-item">
+					<text class="f12 c-66">最小：</text>
+					<input type="text" class="tc" placeholder="例20%" placeholder-class="f12" style="width: 120rpx;background: #F1F5FA;border-radius: 5px;" />
+				</view>
+				<view class="flexBox center-item">
+					<text class="f12 c-66">最大：</text>
+					<input type="text" class="tc" placeholder="例100%" placeholder-class="f12" style="width: 120rpx;background: #F1F5FA;border-radius: 5px;" />
+				</view>
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">计费标准:</text>
+			</view>
+			<view class="flexBox center-item in-content">
+				<radio-group bindchange="radioChange">
+				<label class="radio">
+					<radio value="r1" checked="true" color="#76D3FE" />1小时
+					<radio value="r2" color="#76D3FE" />0.5小时
+				</label>
+				</radio-group>
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">计费单价:</text>
+			</view>
+			<view class="in-content">
+				<input type="text" placeholder="请输入计费单价" />
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">计费时长:</text>
+			</view>
+			<view class="in-content">
+				<input type="text" placeholder="请输入计费时长" />
+			</view>
+		</view>
+		<view class="mt30 f12 c-99">*温馨提示</view>
+		<view class="mt10 search-box plr10 ptb5 f12 c-99">·充电宝分润比例范围0~100%</view>
+	</view>
+	<view class="mt10 plr10 ptb20 justbetween">
+		<navigator url="/pages/shopin1/shopin1" class="btn-back tc f20 fb c-white border-box">上一页</navigator>
+		<navigator url="/pages/shopin3/shopin3" class="btn-next tc f20 fb c-white">下一页</navigator>
+	</view>
+</view>

@@ -70,8 +70,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/shopin1/shopin1",
-					"pathName": "pages/shopin1/shopin1",
+					"name": "pages/shopdetails/shopdetails",
+					"pathName": "pages/shopdetails/shopdetails",
 					"query": "",
 					"scene": null
 				}

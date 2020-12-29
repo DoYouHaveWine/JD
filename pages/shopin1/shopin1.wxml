@@ -55,7 +55,19 @@
 				<text class="point-y dib"></text>
 				<text class="plr5 f15">营业时间:</text>
 			</view>
-			<view class="in-content"></view>
+			<view class="in-content flexBox center-item">
+				<view class="time-box plr5 ptb5">
+					<picker mode="time" value="{{startTime}}" start="00:00" end="24:00" bindchange="bindTimeChange1">
+						<view class="picker">{{shopInData.startTime}}</view>
+					</picker>
+				</view>
+				<text class="plr5">--</text>
+				<view class="time-box plr5 ptb5">
+					<picker mode="time" value="{{endTime}}" start="00:00" end="24:00" bindchange="bindTimeChange2">
+						<view class="picker">{{shopInData.endTime}}</view>
+					</picker>
+				</view>
+			</view>
 		</view>
 		<view class="bt1 ptb10 justbetween center-item">
 			<view>
@@ -91,7 +103,7 @@
 				<text class="plr5 f15">所属区域:</text>
 			</view>
 			<view class="in-content">
-					<picker mode="region" bindchange="bindRegionChange" value="{{shopInData.city}}">
+				<picker mode="region" bindchange="bindRegionChange" value="{{shopInData.city}}">
 					<view class="c-66">
 						<text>{{ shopInData.city ? shopInData.city : '选择省、市、区' }}</text>
 					</view>
@@ -114,12 +126,12 @@
 			</view>
 			<view class="in-content fr">
 				<view>
-				<switch></switch>
+					<switch color="#3F8DFC"></switch>
 				</view>
 			</view>
 		</view>
 	</view>
-	<view class="mt20 plr10 ptb20 tc">
-		<view class="withdrawal tc f20 fb mt10 c-white">下一页</view>
+	<view class="mt10 plr10 ptb20 tc">
+		<navigator url="/pages/shopin2/shopin2" class="withdrawal tc f20 fb c-white">下一页</navigator>
 	</view>
 </view>

@@ -25,7 +25,7 @@
 		</view>
 	</block>
 	<view class="mt30 plr10 ptb20 tc">
-		<view bindtap="subApply" class="withdrawal tc bg-white f20 fb mt10 c-3F8DFC">登录</view>
+		<view bindtap="loginIn" class="withdrawal tc bg-white f20 fb mt10 c-3F8DFC">登录</view>
 		<block>
 			<view wx:if="{{loginCode}}" class="c-white mt20 f14" bindtap="switchLogin">密码登录</view>
 			<view wx:else class="c-white mt20 f14" bindtap="switchLogin">验证码登录</view>

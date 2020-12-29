@@ -59,21 +59,21 @@
 		<!-- 设备状态 -->
 		<view class="mt10 f16 c-33 fb">设备状态</view>
 		<view class="justbetween center-item mt10 c-white">
-			<view class="state-card border-box p10 prelative">
+			<navigator url="/pages/equipment1/equipment1" class="state-card border-box p10 prelative">
 				<text class="f16 c-33">221</text>
 				<view class="f12 c-99">在线设备(台)></view>
 				<image src="../../img/index_card1.png" class="card-bg"></image>
-			</view>
-			<view class="state-card border-box p10 prelative">
+			</navigator>
+			<navigator url="/pages/equipment2/equipment2" class="state-card border-box p10 prelative">
 				<text class="f16" style="color: #F9961D;">221</text>
 				<view class="f12 c-99">离线设备(台)></view>
 				<image src="../../img/index_card2.png" class="card-bg"></image>
-			</view>
-			<view class="state-card border-box p10 prelative">
+			</navigator>
+			<navigator url="/pages/equipment3/equipment3" class="state-card border-box p10 prelative">
 				<text class="f16" style="color: #F35959;">221</text>
 				<view class="f12 c-99">超时离线(台)></view>
 				<image src="../../img/index_card3.png" class="card-bg"></image>
-			</view>
+			</navigator>
 		</view>
 		<view class="mt10 f16 c-33 fb">近一周收益(元)</view>
 	</view>

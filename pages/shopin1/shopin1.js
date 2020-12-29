@@ -19,8 +19,10 @@ Page({
 			id: 3
 		}],
 		location: '点击定位',
-		shopInData:{
-			city:''
+		shopInData:{//需要传入的数据全部放入该obj
+			city:'',
+			startTime:'09:00',
+			endTime:'21:00'
 		}
 	},
 
@@ -114,6 +116,18 @@ Page({
 		console.log('picker发送选择改变，携带值为', e.detail.value)
 		this.setData({
 		  ['shopInData.city']: e.detail.value.join()
+		})
+	},
+	bindTimeChange1(e){
+		console.log(e)
+		this.setData({
+		  ['shopInData.startTime']: e.detail.value
+		})
+	},
+	bindTimeChange2(e){
+		console.log(e)
+		this.setData({
+		  ['shopInData.endTime']: e.detail.value
 		})
 	}
 })

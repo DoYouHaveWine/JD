@@ -25,3 +25,7 @@
 	background: linear-gradient(-6deg, #3F8DFC 0%, #76D3FE 100%);
 	border-radius: 15px;
 }
+.time-box{
+	background: #F1F5FA;
+	border-radius: 5px;
+}

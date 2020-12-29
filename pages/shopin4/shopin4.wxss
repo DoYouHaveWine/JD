@@ -48,3 +48,21 @@
 	background: #F5F5F5;
 	border-radius: 20rpx;
 }
+.in-box-success{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600rpx;
+	height: 520rpx;
+	border-radius: 5px;
+	z-index: 99;
+	padding: 140rpx 60rpx;
+}
+.in-img{
+	position: absolute;
+	width: 386rpx;
+	height: 252rpx;
+	left: 125rpx;
+	top: -105rpx;
+}

@@ -1,0 +1,196 @@
+<view class="main p10 border-box">
+	<view class="justbetween center-item">
+		<view>
+			<text class="line-blue dib"></text>
+			<text class="f16 c-33 plr10">商家基础信息</text>
+		</view>
+		<view class="btn-shopdo c-white tc f14">修改信息</view>
+	</view>
+	<view class="plr20 f14">
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">商家类型:</text>
+			</view>
+			<view class="in-content">
+				<view>代开</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">商家名称:</text>
+			</view>
+			<view class="in-content">
+				<view>星巴克</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">行业:</text>
+			</view>
+			<view class="in-content">
+				<view>餐厅</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">营业时间:</text>
+			</view>
+			<view class="in-content">
+				<view>上午10:00--晚上23:00</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">联系人姓名:</text>
+			</view>
+			<view class="in-content">
+				<view>代开</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">手机号码:</text>
+			</view>
+			<view class="in-content">
+				<view>12548541255</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item prelative">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5">商户地址:</text>
+			</view>
+			<view class="in-content justbetween center-item border-box">
+				<view style="max-width: 400rpx;">广东省深圳市啊是宝安区</view>
+				<view class="btn-go just-center center-item" style="position: absolute;right: -40rpx;">
+					<image src="../../img/icon_go.png" style="width: 30rpx;height: 30rpx;"></image>
+					<text class="plr5 c-3F8DFC">导航</text>
+				</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">是否显示分润:</text>
+			</view>
+			<view class="in-content">
+				<view>是</view>
+			</view>
+		</view>
+	</view>
+	<view class="justbetween center-item">
+		<view class="min-title">
+			<text class="line-blue dib"></text>
+			<text class="f16 c-33 plr10">分润设置</text>
+		</view>
+		<view class="btn-shopdo c-white tc f14">费用调整</view>
+	</view>
+	<view class="plr20 f14">
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">充电宝:</text>
+			</view>
+			<view class="in-content">
+				<view>代开</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">计费单价:</text>
+			</view>
+			<view class="in-content">
+				<view>代开</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">计费时长:</text>
+			</view>
+			<view class="in-content">
+				<view>代开</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">充电线:</text>
+			</view>
+			<view class="in-content">
+				<view>代开</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">计费套餐:</text>
+			</view>
+			<view class="in-content">
+				<view>代开</view>
+			</view>
+		</view>
+	</view>
+	<view class="justbetween center-item">
+		<view class="min-title">
+			<text class="line-blue dib"></text>
+			<text class="f16 c-33 plr10">分润设置</text>
+		</view>
+		<view class="btn-shopdo c-white tc f14">规则调整</view>
+	</view>
+	<view class="plr20 f14">
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">优惠人数:</text>
+			</view>
+			<view class="in-content">
+				<view>代开</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5 ">免费次数:</text>
+			</view>
+			<view class="in-content">
+				<view>代开</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5">免费时长:</text>
+			</view>
+			<view class="in-content">
+				<view>代开</view>
+			</view>
+		</view>
+		<view class="ptb5 flexBox center-item">
+			<view class="min-title">
+				<text class="point-y dib"></text>
+				<text class="plr5">是否开启规则:</text>
+			</view>
+			<view class="in-content">
+				<view>开</view>
+			</view>
+		</view>
+	</view>
+	<view class="mt10 plr10 justbetween">
+		<view class="btn-shop mlr10 just-center center-item">
+			<image src="../../img/icon_status.png" style="width: 40rpx;height: 40rpx;"></image>
+			<text class="plr5">收益状态</text>
+		</view>
+		<view class="btn-shop just-center center-item" bindtap="delShop">
+			<image src="../../img/icon_del.png" style="width: 40rpx;height: 40rpx;"></image>
+			<text class="plr5">删除</text>
+		</view>
+	</view>
+</view>

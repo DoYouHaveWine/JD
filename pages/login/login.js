@@ -40,5 +40,11 @@ Page({
 		this.setData({
 			loginCode: !this.data.loginCode
 		})
+	},
+	loginIn(){
+		//to do
+		wx.switchTab({
+		  url: '/pages/index/index'
+		})
 	}
 })

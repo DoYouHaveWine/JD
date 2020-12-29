@@ -17,7 +17,9 @@
     "pages/change/change",
     "pages/shopin1/shopin1",
     "pages/shopin2/shopin2",
-    "pages/shopin3/shopin3"
+    "pages/shopin3/shopin3",
+    "pages/shopin4/shopin4",
+    "pages/shopdetails/shopdetails"
   ],
   "window": {
     "backgroundTextStyle": "light",

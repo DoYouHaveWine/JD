@@ -1,0 +1,61 @@
+<view class="main plr10 ptb30 border-box">
+	<view class="flexBox center-item">
+		<text class="line-blue dib"></text>
+		<text class="f16 c-33 plr10">员工优惠规则</text>
+	</view>
+	<view class="plr20">
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">员工人数:</text>
+			</view>
+			<view class="in-content">
+				<input type="text" placeholder="请输入员工人数" placeholder-class="f15" />
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">优惠次数:</text>
+			</view>
+			<view class="in-content">
+				<input type="text" placeholder="请输入优惠次数" placeholder-class="f15" />
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">优惠时长:</text>
+			</view>
+			<view class="in-content">
+				<input type="text" placeholder="请输入优惠时长" placeholder-class="f15" />
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">是否开启规则:</text>
+			</view>
+			<view class="in-content fr">
+				<view>
+					<switch color="#3F8DFC"></switch>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="mt10 plr10 ptb20 justbetween">
+		<view class="btn-back tc f20 fb c-white border-box">上一页</view>
+		<view class="btn-next tc f20 fb c-white">提交</view>
+	</view>
+	<block wx:if="{{boxShow}}">
+		<view class="bg-meng"></view>
+		<view class="in-box-success bg-white border-box">
+			<image src="../../img/in-success.png" class="in-img"></image>
+			<view class="f20 c-3F8DFC tc fb">添加商户成功</view>
+			<view class="f15 c-99 mt10 tc">添加商户信息成功,请前往商户列表查看！</view>
+			<view class="tc mt20">
+				<view class="mt10 btn-next tc c-white f20 dib">确定</view>
+			</view>
+		</view>
+	</block>
+</view>

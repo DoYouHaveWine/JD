@@ -10,8 +10,8 @@
 		 placeholder="请输入充电线分润比例" />
 	</view>
 	<view class="mt30 f12 c-99">*温馨提示</view>
-	<view class="mt10 search-box p10 f12 c-99">·充电宝分润比例范围0~100%</view>
-	<view class="mt10 search-box p10 f12 c-99">·充电线分润比例范围0~100%</view>
+	<view class="mt10 search-box plr10 ptb5 f12 c-99">·充电宝分润比例范围0~100%</view>
+	<view class="mt10 search-box plr10 ptb5 f12 c-99">·充电线分润比例范围0~100%</view>
 	<view class="mt20 plr10 ptb20 tc">
 		<view class="withdrawal tc f20 fb mt10 c-white">确认修改</view>
 	</view>

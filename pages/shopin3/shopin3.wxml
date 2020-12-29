@@ -1,2 +1,79 @@
-<!--pages/shopin3/shopin3.wxml-->
-<text>pages/shopin3/shopin3.wxml</text>
+<view class="main plr10 ptb30 border-box">
+	<view class="flexBox center-item">
+		<text class="line-blue dib"></text>
+		<text class="f16 c-33 plr10">充电宝分润</text>
+	</view>
+	<view class="plr20">
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">分润比例:</text>
+			</view>
+			<view class="justbetween center-item in-content">
+				<view class="flexBox center-item">
+					<text class="f12 c-66">最小：</text>
+					<input type="text" class="tc" placeholder="例20%" placeholder-class="f12" style="width: 120rpx;background: #F1F5FA;border-radius: 5px;" />
+				</view>
+				<view class="flexBox center-item">
+					<text class="f12 c-66">最大：</text>
+					<input type="text" class="tc" placeholder="例100%" placeholder-class="f12" style="width: 120rpx;background: #F1F5FA;border-radius: 5px;" />
+				</view>
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">1小时套餐:</text>
+			</view>
+			<view class="in-content justbetween center-item">
+				<input type="text" placeholder="请输入套餐价格" placeholder-class="f15" />
+				<view>
+					<switch color="#3F8DFC"></switch>
+				</view>
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">3小时套餐:</text>
+			</view>
+			<view class="in-content justbetween center-item">
+				<input type="text" placeholder="请输入套餐价格" placeholder-class="f15" />
+				<view>
+					<switch color="#3F8DFC"></switch>
+				</view>
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">5小时套餐:</text>
+			</view>
+			<view class="in-content justbetween center-item">
+				<input type="text" placeholder="请输入套餐价格" placeholder-class="f15" />
+				<view>
+					<switch color="#3F8DFC"></switch>
+				</view>
+			</view>
+		</view>
+		<view class="bt1 ptb10 justbetween center-item">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">12小时套餐:</text>
+			</view>
+			<view class="in-content justbetween center-item">
+				<input type="text" placeholder="请输入套餐价格" placeholder-class="f15" />
+				<view>
+					<switch color="#3F8DFC"></switch>
+				</view>
+			</view>
+		</view>
+		<view class="mt30 f12 c-99">*温馨提示</view>
+		<view class="mt10 search-box plr10 ptb5 f12 c-99">·充电线分润比例范围0~100%</view>
+		<view class="mt10 search-box plr10 ptb5 f12 c-99">·套餐价格不能为空，套餐可多选，开关选择即可</view>
+	</view>
+	<view class="mt10 plr10 ptb20 justbetween">
+		<navigator url="/pages/shopin2/shopin2" class="btn-back tc f20 fb c-white border-box">上一页</navigator>
+		<navigator url="/pages/shopin4/shopin4" class="btn-next tc f20 fb c-white">下一页</navigator>
+	</view>
+</view>
