@@ -1,0 +1,62 @@
+<view class="main">
+	<view class="bg-withdraw ptb10">
+		<view class="c-white f12 plr15">可提现余额</view>
+		<view class="justbetween center-item">
+			<text class="c-white f24 fb plr15">21400.11</text>
+			<view class="withdrawal-list tc">
+				<text class="c-white f15 plr5">提现记录</text>
+				<image src="../../img/icon_nextw.png" style="width: 15rpx;height: 26rpx;"></image>
+			</view>
+		</view>
+	</view>
+	<view class="plr15 prelative" style="top: -180rpx;">
+		<view class="withdrawal-input plr15 ptb10 border-box">
+			<view>提现金额</view>
+			<view class="bt1 flexBox center-item mt30">
+				<text class="f24">￥</text>
+				<input type="text" class="flexItem f24" placeholder="请输入提现金额" placeholder-class="f16" />
+				<text style="color: #73CDF9;" class="f15">全部提现</text>
+			</view>
+			<view class="justbetween center-item mt20">
+				<view>提现至</view>
+				<view class="flexBox center-item">
+					<image src="../../img/icon_wx.png" style="width: 48rpx;height: 48rpx;"></image>
+					<text class="f15 plr5">syn123123</text>
+					<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+				</view>
+			</view>
+		</view>
+		<view class="code-box flexBox center-item plr15 border-box mt15">
+			<input type="text" placeholder="请输入验证码" placeholder-class="f16 c-A5B1C4" class="f16" bindinput="bindCode" />
+			<text class="plr10 c-99">|</text>
+			<button class="code-btn" size="mini" plain="true">{{codeMsg}}</button>
+		</view>
+		<view class="tc f12 mt10" style="color: #A5B1C4;">手机验证码发送到{{phone}}手机上,请注意查收</view>
+		<view class="f12 c-99 mt15">*温馨提示</view>
+		<view class="mt10 search-box plr10 ptb5 f12 c-99">·提现需额外扣除手续费<text class="c-3F8DFC">￥3.00</text>/笔，单笔提现最低10元，最高 10000元，单日最高10000元。</view>
+		<view bindtap="" class="withdrawal tc f20 fb mt20 c-white">确认提现</view>
+	</view>
+	<block wx:if="{{success}}">
+		<view class="bg-meng"></view>
+		<view class="in-box-success bg-white border-box">
+			<image src="../../img/in-success.png" class="in-img"></image>
+			<view class="f20 c-3F8DFC tc fb">提现操作成功</view>
+			<view class="f15 c-99 mt10 tc">当前提现操作成功，是否前往提现列表中去查看？</view>
+			<view class="tc mt20 justbetween center-item">
+				<view bindtap="hideBox" class="mt10 btn-next tc c-white f20 dib border-box" style="background: #ffffff; color: #666666;border: 1px solid #666666;width: 200rpx;">取消</view>
+				<navigator url="/pages/withlist/withlist" class="mt10 btn-next tc c-white f20 dib" style="width: 200rpx;">去查看</navigator>
+			</view>
+		</view>
+	</block>
+	<block wx:if="{{fail}}">
+		<view class="bg-meng"></view>
+		<view class="in-box-success bg-white border-box">
+			<image src="../../img/in_fail.png" class="in-img"></image>
+			<view class="f20 c-3F8DFC tc fb">提现操作失败</view>
+			<view class="f15 c-99 mt10 tc">当前提现操作失败，请检查您填写的信息是否正确再重新申请！</view>
+			<view class="tc mt20">
+				<view bindtap="hideBox" class="mt10 btn-next tc c-white f20 dib">确定</view>
+			</view>
+		</view>
+	</block>
+</view>

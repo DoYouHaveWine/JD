@@ -1,0 +1,46 @@
+<view class="main plr15 ptb10 border-box">
+	<view>
+		<text class="line-blue dib"></text>
+		<text class="c-33 f16 fb plr10">提现明细</text>
+	</view>
+	<view>
+		<view class="list-items-w bg-white p10 border-box mt10">
+			<view class="justbetween center-item">
+				<view class="flexBox center-item">
+					<image src="../../img/icon_ali.png" style="width: 48rpx;height: 48rpx;"></image>
+					<text class="f15">1352011258</text>
+				</view>
+				<view class="f18 c-418EFC">￥10.01</view>
+			</view>
+			<view class="justbetween center-item f12 c-99 mt5">
+				<text>02320125132</text>
+				<text>09-12 12:59</text>
+			</view>
+			<view class="justbetween center-item mt5">
+				<text class="f12 c-99">手续费：<text class="f15" style="color: #000000;">￥0.32</text></text>
+				<text class="f16" style="color: #35DD9C;">提现成功</text>
+			</view>
+		</view>
+		<view class="list-items-w bg-white p10 border-box mt10">
+			<view class="justbetween center-item">
+				<view class="flexBox center-item">
+					<image src="../../img/icon_wx.png" style="width: 48rpx;height: 48rpx;"></image>
+					<text class="f15">1352011258</text>
+				</view>
+				<view class="f18 c-418EFC">￥10.01</view>
+			</view>
+			<view class="justbetween center-item f12 c-99 mt5">
+				<text>02320125132</text>
+				<text>09-12 12:59</text>
+			</view>
+			<view class="justbetween center-item mt5">
+				<text class="f12 c-99">手续费：<text class="f15" style="color: #000000;">￥0.32</text></text>
+				<text class="f16" style="color: #F35959;">提现失败</text>
+			</view>
+			<view class="justbetween center-item mt5">
+				<view></view>
+				<view class="f12 c-99">注：实名信息不一致</view>
+			</view>
+		</view>
+	</view>
+</view>

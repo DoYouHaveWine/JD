@@ -29,7 +29,8 @@ Page({
 		}],
 		kinds2: [{
 			src: '../../img/icon_m7.png',
-			text: '订单明细'
+			text: '订单明细',
+			url:'/pages/order/order'
 		}, {
 			src: '../../img/icon_m8.png',
 			text: '在线商城'

@@ -1,0 +1,54 @@
+/* pages/sbxf/sbxf.wxss */
+.search-box{
+	background: #F5F5F5;
+	border-radius: 20rpx;
+}
+.btn-in{
+	width: 120rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	border-radius: 5px;
+}
+.img-in{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.point-y{
+	background: #FEB41F;
+	border-radius: 50%;
+	width: 10rpx;
+	height: 10rpx;
+}
+.withdrawal{
+	height: 100rpx;
+	line-height: 100rpx;
+	background: linear-gradient(-6deg, #3F8DFC 0%, #76D3FE 100%);
+	border-radius: 15px;
+}
+.in-box-success{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600rpx;
+	height: 520rpx;
+	border-radius: 5px;
+	z-index: 99;
+	padding: 140rpx 60rpx;
+}
+.in-img{
+	position: absolute;
+	width: 386rpx;
+	height: 252rpx;
+	left: 125rpx;
+	top: -105rpx;
+}
+.btn-next{
+	width:300rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	background: linear-gradient(-6deg, #3F8DFC 0%, #76D3FE 100%);
+	border-radius: 15px;
+}

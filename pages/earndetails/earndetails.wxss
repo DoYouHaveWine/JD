@@ -1,0 +1,13 @@
+/* pages/earndetails/earndetails.wxss */
+.earn-items{
+	background: #FFFFFF;
+	box-shadow: 3rpx 7rpx 38rpx 0rpx rgba(45, 66, 95, 0.1);
+	border-radius: 30rpx;
+}
+.date-box{
+	background: #F1F5FA;
+	color: #A5B1C4;
+	height: 88rpx;
+	line-height: 88rpx;
+	border-radius: 20rpx;
+}

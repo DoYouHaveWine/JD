@@ -1,0 +1,36 @@
+<view class="main plr15 ptb10 border-box">
+	<view class="mt10">
+		<text class="point-r dib"></text>
+		<text>下级代理手机号码</text>
+	</view>
+	<view class="search-box plr15 ptb10 mt10">
+		<input type="text" placeholder="请输入下级代理手机号码" />
+	</view>
+	<view class="mt10">
+		<text class="point-r dib"></text>
+		<text>下级代理姓名</text>
+	</view>
+	<view class="search-box plr15 ptb10 mt10">
+		<input type="text" placeholder="请输入下级代理姓名" />
+	</view>
+	<view class="mt10">
+		<text class="point-r dib"></text>
+		<text>充电宝分润</text>
+	</view>
+	<view class="search-box plr15 ptb10 mt10">
+		<input type="text" placeholder="请输入充电宝分润(0~100)" />
+	</view>
+	<view class="mt10">
+		<text class="point-r dib"></text>
+		<text>充电线分润</text>
+	</view>
+	<view class="search-box plr15 ptb10 mt10">
+		<input type="text" placeholder="请输入充电线分润(0~100)" />
+	</view>
+	<view class="mt30 f12 c-99">*温馨提示</view>
+	<view class="mt10 search-box plr10 ptb5 f12 c-99">·充电宝分润比例范围0~100%</view>
+	<view class="mt10 search-box plr10 ptb5 f12 c-99">·充电线分润比例范围0~100%</view>
+	<view class="mt20 plr10 ptb20 tc">
+		<view bindtap="" class="withdrawal tc f20 fb mt10 c-white">开通</view>
+	</view>
+</view>

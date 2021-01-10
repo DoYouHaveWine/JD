@@ -1,0 +1,66 @@
+/* pages/withdraw/withdraw.wxss */
+.bg-withdraw{
+	height: 370rpx;
+	background: linear-gradient(180deg, #3F8DFC 0%, #76D3FE 100%);
+}
+.withdrawal-list{
+	width: 220rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	background: rgba(255,255,255,0.26);
+	border-radius: 25rpx 0rpx 0rpx 25rpx;
+}
+.withdrawal-input{
+	height: 330rpx;
+	background: #FFFFFF;
+	box-shadow: 3rpx 7rpx 38rpx 0px rgba(45, 66, 95, 0.1);
+	border-radius: 30rpx;
+}
+.code-box{
+	height: 100rpx;
+	line-height: 100rpx;
+	background: #FFFFFF;
+	box-shadow: 3rpx 7rpx 38rpx 0rpx rgba(45, 66, 95, 0.1);
+	border-radius: 30rpx;
+}
+.code-btn{
+	color: #000000 !important;
+	background: transparent !important;
+	border: none !important;
+	padding: 0 !important;
+}
+.search-box{
+	background: #F5F5F5;
+	border-radius: 20rpx;
+}
+.withdrawal{
+	height: 100rpx;
+	line-height: 100rpx;
+	background: linear-gradient(-6deg, #3F8DFC 0%, #76D3FE 100%);
+	border-radius: 15px;
+}
+.in-box-success{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600rpx;
+	height: 520rpx;
+	border-radius: 5px;
+	z-index: 99;
+	padding: 140rpx 60rpx;
+}
+.in-img{
+	position: absolute;
+	width: 386rpx;
+	height: 252rpx;
+	left: 125rpx;
+	top: -105rpx;
+}
+.btn-next{
+	width:300rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	background: linear-gradient(-6deg, #3F8DFC 0%, #76D3FE 100%);
+	border-radius: 15px;
+}

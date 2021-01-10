@@ -1,0 +1,91 @@
+<view class="main plr15 ptb10 border-box">
+	<view class="flexBox center-item">
+		<text class="line-blue dib"></text>
+		<text class="c-33 f16 fb plr10">SN码区间</text>
+	</view>
+	<view class="search-box plr15 ptb10 mt10 flexBox center-item">
+		<input type="text" class="flexItem" placeholder="请输入起始SN码" />
+		<image src="../../img/scan.png" style="width: 42rpx;height: 42rpx;"></image>
+	</view>
+	<view class="search-box plr15 ptb10 mt10 flexBox center-item">
+		<input type="text" class="flexItem" placeholder="请输入终止SN码" />
+		<image src="../../img/scan.png" style="width: 42rpx;height: 42rpx;"></image>
+	</view>
+	<view class="mt15 justbetween center-item">
+		<view class="flexBox center-item">
+			<text class="line-blue dib"></text>
+			<text class="c-33 f16 fb plr10">请选择下发对象</text>
+		</view>
+		<view class="flexBox center-item">
+			<view class="btn-in prelative tc" bindtap="choicekinds1">
+				<block>
+					<image wx:if="{{inkind1}}" src="../../img/btn_bg_active.png" class="btn-in img-in"></image>
+					<image wx:else src="../../img/btn_bg_normal.png" class="btn-in img-in"></image>
+				</block>
+				<text class="f15 {{inkind1?'c-white':'c-99'}}" style="z-index: 99;">代理</text>
+			</view>
+			<view class="btn-in prelative tc mlr10" bindtap="choicekinds2">
+				<block>
+					<image wx:if="{{inkind2}}" src="../../img/btn_bg_active.png" class="btn-in img-in"></image>
+					<image wx:else src="../../img/btn_bg_normal.png" class="btn-in img-in"></image>
+				</block>
+				<text class="f15 {{inkind2?'c-white':'c-99'}}" style="z-index: 99;">商户</text>
+			</view>
+		</view>
+	</view>
+	<view>
+		<view class="bt1 mt10 justbetween center-item p10 border-box" wx:if="{{inkind1}}">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">下级代理:</text>
+			</view>
+			<view class="justbetween center-item in-content">
+				<picker mode="selector" bindchange="bindAgent" range="{{agentsObj}}" range-key="name">
+					<view class="picker c-66">
+						<text>{{ agent ? agent : '请选择下级代理' }}</text>
+					</view>
+				</picker>
+				<image src="../../img/icon_next.png" style="width: 16rpx;height: 16rpx;"></image>
+			</view>
+		</view>
+		<view class="bt1 mt10 justbetween center-item p10 border-box" wx:if="{{inkind2}}">
+			<view>
+				<text class="point-y dib"></text>
+				<text class="plr5 f15">商家名称:</text>
+			</view>
+			<view class="justbetween center-item in-content">
+				<picker mode="selector" bindchange="bindShops" range="{{shopsObj}}" range-key="name">
+					<view class="picker c-66">
+						<text>{{ shops ? shops : '请选择商家名称' }}</text>
+					</view>
+				</picker>
+				<image src="../../img/icon_next.png" style="width: 16rpx;height: 16rpx;"></image>
+			</view>
+		</view>
+	</view>
+	<view class="plr10 ptb20 tc border-box" style="position: fixed;bottom: 50rpx;width: 100%;left: 0;">
+		<view bindtap="subApply" class="withdrawal tc f20 fb mt10 c-white">确认下发</view>
+	</view>
+	<block wx:if="{{success}}">
+		<view class="bg-meng"></view>
+		<view class="in-box-success bg-white border-box">
+			<image src="../../img/xf_success.png" class="in-img"></image>
+			<view class="f20 c-3F8DFC tc fb">设备下发成功</view>
+			<view class="f15 c-99 mt10 tc">成功下发设备50台，未下发成功的请尝试重新选择！</view>
+			<view class="tc mt20">
+				<view bindtap="hideBox" class="mt10 btn-next tc c-white f20 dib">确定</view>
+			</view>
+		</view>
+	</block>
+	<block wx:if="{{fail}}">
+		<view class="bg-meng"></view>
+		<view class="in-box-success bg-white border-box">
+			<image src="../../img/xf_fail.png" class="in-img"></image>
+			<view class="f20 tc fb" style="color: #F35959;">下发失败</view>
+			<view class="f15 c-99 mt10 tc">设备下发失败，请尝试重新选择！</view>
+			<view class="tc mt20">
+				<view bindtap="hideBox" class="mt10 btn-next tc c-white f20 dib">确定</view>
+			</view>
+		</view>
+	</block>
+</view>

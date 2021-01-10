@@ -1,0 +1,58 @@
+<!--pages/earndetails/earndetails.wxml-->
+<view class="main plr15 ptb10 border-box">
+	<view>
+		<text class="line-blue dib"></text>
+		<text class="c-33 f16 fb plr10">时间筛选</text>
+	</view>
+	<view class="flexBox center-item mt15">
+		<view class="flexItem date-box f16 tc">
+			<picker mode="date" value="{{startDate}}" start="2019-09-01" end="2100-01-01" bindchange="bindTimeChange1">
+				<view class="picker">
+					<text>{{startDate?startDate:'开始时间'}}</text>
+					<image src="../../img/icon_open.png" style="width: 20rpx;height: 12rpx;"></image>
+				</view>
+			</picker>
+		</view>
+		<view>——</view>
+		<view class="flexItem date-box f16 tc">
+			<picker mode="date" value="{{endDate}}" start="2019-09-01" end="2100-01-01" bindchange="bindTimeChange2">
+				<view class="picker">
+					<text>{{endDate?endDate:'结束时间'}}</text>
+					<image src="../../img/icon_open.png" style="width: 20rpx;height: 12rpx;"></image>
+				</view>
+			</picker>
+		</view>
+	</view>
+	<view class="mt15">
+		<text class="line-blue dib"></text>
+		<text class="c-33 f16 fb plr10">收益明细</text>
+	</view>
+	<view class="mt10">
+		<view class="earn-items justbetween center-item mt10 ptb10 plr15 border-box">
+			<view class="flexBox center-item">
+				<image src="../../img/icon_earn.png" style="width: 64rpx;height: 64rpx;"></image>
+				<view class="plr10">
+					<view>
+						<text class="f15 c-33">使用收益(元)</text>
+						<text class="f12 c-99 plr5">09-12 12：58</text>
+					</view>
+					<view class="f12 c-99">订单：123132131322313312</view>
+				</view>
+			</view>
+			<view class="f18 fb" style="color: #418EFC;">+10</view>
+		</view>
+		<view class="earn-items justbetween center-item mt10 ptb10 plr15 border-box">
+			<view class="flexBox center-item">
+				<image src="../../img/icon_earnback.png" style="width: 64rpx;height: 64rpx;"></image>
+				<view class="plr10">
+					<view>
+						<text class="f15 c-33">订单回退(元)</text>
+						<text class="f12 c-99 plr5">09-12 12：58</text>
+					</view>
+					<view class="f12 c-99">订单：123132131322313312</view>
+				</view>
+			</view>
+			<view class="f18 fb" style="color: #F8696D;">-10</view>
+		</view>
+	</view>
+</view>

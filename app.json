@@ -19,7 +19,14 @@
     "pages/shopin2/shopin2",
     "pages/shopin3/shopin3",
     "pages/shopin4/shopin4",
-    "pages/shopdetails/shopdetails"
+    "pages/shopdetails/shopdetails",
+    "pages/order/order",
+    "pages/withdraw/withdraw",
+    "pages/withlist/withlist",
+    "pages/ktxj/ktxj",
+    "pages/earndetails/earndetails",
+    "pages/sbxf/sbxf",
+    "pages/online/online"
   ],
   "window": {
     "backgroundTextStyle": "light",
