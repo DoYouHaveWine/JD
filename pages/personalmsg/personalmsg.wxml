@@ -1,0 +1,44 @@
+<view class="main plr15 border-box">
+	<view class="just-center">
+		<view>
+			<image src="../../img/p_head.png" style="width: 168rpx;height: 168rpx;"></image>
+		</view>
+	</view>
+	<view class="mt20">
+		<view class="p-items justbetween center-item plr10 ptb15 border-box">
+			<view class="flexBox center-item">
+				<text class="f15 c-33 plr10">用户昵称</text>
+			</view>
+			<view class="flexBox center-item">
+				<text class="f15 c-99">王耀一</text>
+				<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+			</view>
+		</view>
+		<view class="p-items justbetween center-item plr10 ptb15 border-box">
+			<view class="flexBox center-item">
+				<text class="f15 c-33 plr10">手机号码</text>
+			</view>
+			<view class="flexBox center-item">
+				<text class="f15 c-99">13542541254</text>
+				<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+			</view>
+		</view>
+		<view class="p-items justbetween center-item plr10 ptb15 border-box">
+			<view class="flexBox center-item">
+				<text class="f15 c-33 plr10">微信绑定</text>
+			</view>
+			<view class="flexBox center-item">
+				<text class="f15 c-99">未绑定</text>
+				<image src="../../img/icon_next.png" style="width: 15rpx;height: 26rpx;"></image>
+			</view>
+		</view>
+		<view class="p-items justbetween center-item plr10 ptb15 border-box">
+			<view class="flexBox center-item">
+				<text class="f15 c-33 plr10">注册时间</text>
+			</view>
+			<view class="flexBox center-item">
+				<text class="f15 c-99">2020-01-01 12:58</text>
+			</view>
+		</view>
+	</view>
+</view>

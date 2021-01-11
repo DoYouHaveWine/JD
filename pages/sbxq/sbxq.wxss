@@ -1,0 +1,29 @@
+/* pages/sbxq/sbxq.wxss */
+.btn-do{
+	width: 150rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	background: linear-gradient(-6deg, #3F8DFC 0%, #76D3FE 100%);
+	border-radius: 14rpx;
+}
+.list-items-b{
+	box-shadow: 3rpx 7rpx 38rpx 0rpx rgba(45, 66, 95, 0.1);
+	border-radius: 30rpx;
+}
+.btn-use{
+	width: 120rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	background: #F1F5FA;
+	border-radius: 14rpx;
+	color: #418EFC;
+}
+.c-full{
+	color: #35DD9C;
+}
+.c-null{
+	color: #F35959;
+}
+.c-doing{
+	color: #418EFC;
+}

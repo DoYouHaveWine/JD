@@ -26,7 +26,10 @@
     "pages/ktxj/ktxj",
     "pages/earndetails/earndetails",
     "pages/sbxf/sbxf",
-    "pages/online/online"
+    "pages/online/online",
+    "pages/sbxq/sbxq",
+    "pages/sbxql/sbxql",
+    "pages/personalmsg/personalmsg"
   ],
   "window": {
     "backgroundTextStyle": "light",

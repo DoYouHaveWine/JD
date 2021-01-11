@@ -1,0 +1,4 @@
+.list-items-b{
+	box-shadow: 3rpx 7rpx 38rpx 0rpx rgba(45, 66, 95, 0.1);
+	border-radius: 30rpx;
+}

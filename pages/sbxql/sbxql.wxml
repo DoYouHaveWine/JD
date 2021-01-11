@@ -1,0 +1,31 @@
+<!--pages/sbxq/sbxq.wxml-->
+<view class="main plr10 ptb10 border-box">
+	<view class="flexBox center-item">
+		<view>
+			<text class="line-blue dib"></text>
+			<text class="c-33 f16 fb plr10">SN:12121313</text>
+		</view>
+	</view>
+	<view class="f12 c-99 mt10">
+		<image class="plr10" src="../../img/icon_ad.png" style="width: 16rpx;height: 16rpx;"></image>
+		<text>小酒窝酒馆</text>
+	</view>
+	<view class="f12 c-99 mt10">
+		<image class="plr10" src="../../img/icon_ad.png" style="width: 16rpx;height: 16rpx;"></image>
+		<text>广东省深圳市宝安区</text>
+	</view>
+	<view class="mt15">
+		<view class="list-items-b justbetween center-item border-box plr15 ptb10 mt10">
+			<view class="f15 c-33">序号40：</view>
+			<view><text class="f12 c-99">密码:</text><text class="f15 c-418EFC">563878[1-4]</text></view>
+		</view>
+		<view class="list-items-b justbetween center-item border-box plr15 ptb10 mt10">
+			<view class="f15 c-33">序号40：</view>
+			<view><text class="f12 c-99">密码:</text><text class="f15 c-418EFC">563878[1-4]</text></view>
+		</view>
+		<view class="list-items-b justbetween center-item border-box plr15 ptb10 mt10">
+			<view class="f15 c-33">序号40：</view>
+			<view><text class="f12 c-99">密码:</text><text class="f15 c-418EFC">563878[1-4]</text></view>
+		</view>
+	</view>
+</view>

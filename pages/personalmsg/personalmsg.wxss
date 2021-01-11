@@ -1,0 +1,14 @@
+.card-invent{
+	background: #F1F5FA;
+	border-radius: 5px;
+	width: 330rpx;
+}
+.card-notice{
+	background: #FEFAE7;
+	border-radius: 5px;
+	width: 330rpx;
+}
+.p-items{
+	/* height: 120rpx; */
+	background: #F8F9FB;
+}

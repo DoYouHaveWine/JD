@@ -70,8 +70,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/online/online",
-					"pathName": "pages/online/online",
+					"name": "pages/personalmsg/personalmsg",
+					"pathName": "pages/personalmsg/personalmsg",
 					"query": "",
 					"scene": null
 				}
