@@ -32,7 +32,9 @@
     "pages/personalmsg/personalmsg",
     "pages/scan/scan",
     "pages/register/register",
-    "pages/reset/reset"
+    "pages/reset/reset",
+    "pages/name/name",
+    "pages/named/named"
   ],
   "window": {
     "backgroundTextStyle": "light",

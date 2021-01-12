@@ -1,0 +1,83 @@
+<view class="main plr15 ptb10 border-box">
+	<view class="flexBox center-item">
+		<view>
+			<text class="line-blue dib"></text>
+			<text class="c-33 f16 fb plr10">上传身份信息</text>
+		</view>
+	</view>
+	<view class="justbetween center-item mt10">
+		<view class="id-content prelative">
+			<view>
+				<image src="../../img/idcard1.png" class="middle-img" style="width: 202rpx;height: 126rpx;"></image>
+				<image src="../../img/icon_photo.png" class="middle-img" style="width: 64rpx;height: 64rpx;z-index: 10;"></image>
+			</view>
+			<view class="name-tip c-white f15 tc">拍摄正面</view>
+		</view>
+		<view class="id-content prelative">
+			<view>
+				<image src="../../img/idcard1.png" class="middle-img" style="width: 202rpx;height: 126rpx;"></image>
+				<image src="../../img/icon_photo.png" class="middle-img" style="width: 64rpx;height: 64rpx;z-index: 10;"></image>
+			</view>
+			<view class="name-tip c-white f15 tc">拍摄背面</view>
+		</view>
+	</view>
+	<view class="c-66 f12 mt10">请保持照片中身份证显示完整，字体清晰可见，亮度均匀！</view>
+	<view class="flexBox center-item mt10">
+		<view>
+			<text class="line-blue dib"></text>
+			<text class="c-33 f16 fb plr10">确认身份信息</text>
+		</view>
+	</view>
+	<view class="mt10" style="background: #F8F9FB;border-radius: 15px;">
+		<view class="flexBox plr15 ptb10 border-box center-item">
+			<text class="f15 c-33">真实姓名：</text>
+			<input class="flexItem" type="text" placeholder="请填写真实姓名" />
+		</view>
+		<view class="flexBox plr15 ptb10 border-box center-item">
+			<text class="f15 c-33">身份证号：</text>
+			<input class="flexItem" type="text" placeholder="请填写身份证号" />
+		</view>
+	</view>
+	<view class="flexBox center-item mt10">
+		<view>
+			<text class="line-blue dib"></text>
+			<text class="c-33 f16 fb plr10">身份验证</text>
+		</view>
+	</view>
+	<view class="mt10" style="background: #F8F9FB;border-radius: 15px;">
+		<view class="flexBox plr15 ptb10 border-box center-item">
+			<text class="f15 c-33">联系方式：</text>
+			<input class="flexItem" type="text" placeholder="请输入您的联系方式" />
+		</view>
+		<view class="flexBox plr15 ptb10 border-box center-item">
+			<text class="f15 c-33">验证码：</text>
+			<input type="text" placeholder="请输入验证码" placeholder-class="f16 c-A5B1C4" class="f16 flexItem" />
+			<text class="plr10">|</text>
+			<button class="code-btn" size="mini" plain="true">{{codeMsg}}</button>
+		</view>
+	</view>
+	<view class="mt20 plr10 ptb20 tc">
+		<view bindtap="" class="withdrawal tc f20 fb mt10 c-white">确认</view>
+	</view>
+	<block wx:if="{{subSuccess}}">
+		<view class="bg-meng"></view>
+		<view class="sub-success border-box plr10 ptb20 tc">
+			<image src="../../img/tip_nsure.png" style="width: 316rpx;height: 220rpx;"></image>
+			<view class="f20 c-33 mt20">提交成功，请耐心等待....</view>
+			<view class="tc mt10">
+				<view bindtap="hideBox" class="mt10 btn-next tc c-white f20 dib">确定</view>
+			</view>
+		</view>
+	</block>
+	<block wx:if="{{subFail}}">
+		<view class="bg-meng"></view>
+		<view class="sub-fail border-box plr20 ptb20 tc">
+			<image src="../../img/tip_nfail.png" style="width: 316rpx;height: 220rpx;"></image>
+			<view class="f15 c-33 mt10">实名失败，请检查信息是否正确 并重新申请？</view>
+			<view class="tc mt20 justbetween center-item">
+				<view bindtap="hideBox" class="mt10 btn-next tc c-white f20 dib border-box" style="background: #ffffff; color: #666666;border: 1px solid #666666;width: 240rpx;">取消</view>
+				<navigator class="mt10 btn-next tc c-white f20 dib" style="width: 240rpx;">去查看</navigator>
+			</view>
+		</view>
+	</block>
+</view>

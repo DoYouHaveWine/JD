@@ -1,0 +1,25 @@
+<view class="main plr15 border-box">
+	<view class="just-center">
+		<view>
+			<image src="../../img/tip_namesure.png" style="width: 316rpx;height: 260rpx;"></image>
+		</view>
+	</view>
+	<view class="mt20">
+		<view class="p-items justbetween center-item plr10 ptb15 border-box">
+			<view class="flexBox center-item">
+				<text class="f15 c-33 plr10">真实姓名</text>
+			</view>
+			<view class="flexBox center-item">
+				<text class="f15 c-99">王耀一</text>
+			</view>
+		</view>
+		<view class="p-items justbetween center-item plr10 ptb15 border-box">
+			<view class="flexBox center-item">
+				<text class="f15 c-33 plr10">身份证号</text>
+			</view>
+			<view class="flexBox center-item">
+				<text class="f15 c-99">41254125****462354</text>
+			</view>
+		</view>
+	</view>
+</view>

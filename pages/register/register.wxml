@@ -2,7 +2,7 @@
 <view class="main plr15 border-box">
 	<image src="../../img/bg_register.png" style="width: 100vw;height: 100vh;position: absolute;top: 0;left: 0;z-index: -1;"></image>
 	<view style="height: 200rpx;"></view>
-	<view class="register-box border-box ptb30 plr15">
+	<view class="register-box border-box ptb30 plr15 bg-white mt10">
 		<view class="tc">
 			<image src="../../img/logo.png" style="width: 228rpx;height: 96rpx;"></image>
 		</view>
@@ -22,8 +22,8 @@
 		<view class="input-items bg-f5 mt20 plr15 ptb10 f14 border-box">
 			<input type="number" value="13524****5511(小黄)" disabled="disabled" class="f16" bindinput="bindPhone" />
 		</view>
-	</view>
 	<view class="plr10 tc">
-		<view bindtap="" class="withdrawal tc f20 fb mt10 c-white">提交</view>
+		<view bindtap="" class="withdrawal tc f20 fb mt20 c-white">提交</view>
+	</view>
 	</view>
 </view>
