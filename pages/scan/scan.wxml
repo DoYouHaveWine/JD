@@ -1,0 +1,5 @@
+<!--pages/scan/scan.wxml-->
+<view class="main over-hide">
+	<image src="../../img/bg_scan.png" style="width: 100vw;height: 100vh;"></image>
+		<view class="withdrawal tc f20 fb mt10 c-white">保存至相册</view>
+</view>

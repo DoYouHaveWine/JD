@@ -1,0 +1,29 @@
+<!--pages/register/register.wxml-->
+<view class="main plr15 border-box">
+	<image src="../../img/bg_register.png" style="width: 100vw;height: 100vh;position: absolute;top: 0;left: 0;z-index: -1;"></image>
+	<view style="height: 200rpx;"></view>
+	<view class="register-box border-box ptb30 plr15">
+		<view class="tc">
+			<image src="../../img/logo.png" style="width: 228rpx;height: 96rpx;"></image>
+		</view>
+		<view class="input-items bg-f5 plr15 mt20 ptb10 f14 border-box">
+			<input type="number" placeholder="请输入您的联系方式" placeholder-class="f16 c-A5B1C4" class="f16" bindinput="bindPhone" />
+		</view>
+		<view class="input-items bg-f5  mt20 plr15 ptb10 f14 flexBox center-item border-box">
+			<input type="text" placeholder="请输入验证码" placeholder-class="f16 c-A5B1C4" class="f16" bindinput="bindCode" />
+			<text class="plr10">|</text>
+			<button class="code-btn" size="mini" plain="true">{{codeMsg}}</button>
+		</view>
+		<view class="input-items bg-f5 mt20 plr15 ptb10 f14 border-box prelative">
+			<input type="{{pwdSwitch?'text':'password'}}" placeholder="设置新密码" placeholder-class="f16 c-A5B1C4" class="f16"
+			 bindinput="bindPhone" />
+			<image src="{{pwdSwitch?'../../img/tip_on.png':'../../img/tip_off.png'}}" bindtap="switch" class="tip-pwd" style="width: 40rpx;height: 25rpx;"></image>
+		</view>
+		<view class="input-items bg-f5 mt20 plr15 ptb10 f14 border-box">
+			<input type="number" value="13524****5511(小黄)" disabled="disabled" class="f16" bindinput="bindPhone" />
+		</view>
+	</view>
+	<view class="plr10 tc">
+		<view bindtap="" class="withdrawal tc f20 fb mt10 c-white">提交</view>
+	</view>
+</view>

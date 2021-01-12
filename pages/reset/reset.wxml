@@ -1,0 +1,24 @@
+<view class="main plr30 ptb30 border-box">
+	<view>
+		<view class="fb f16 c-33">旧登录密码</view>
+		<view class="input-items mt10 plr15 ptb10 f14 border-box bg-f5">
+			<input type="number" placeholder="请输入旧登录密码" placeholder-class="f16 c-A5B1C4" class="f16" />
+		</view>
+		<view class="fb f16 c-33 mt10">新登录密码</view>
+		<view class="input-items mt10 plr15 ptb10 f14 border-box bg-f5">
+			<input type="number" placeholder="请输入新登录密码" placeholder-class="f16 c-A5B1C4" class="f16" />
+		</view>
+		<view class="fb f16 c-33 mt10">确认新登录密码</view>
+		<view class="input-items mt10 plr15 ptb10 f14 border-box bg-f5">
+			<input type="number" placeholder="请确认新登录密码" placeholder-class="f16 c-A5B1C4" class="f16" />
+		</view>
+		<view class="mt10 tr f15 c-3F8DFC">
+			<navigator url="/pages/forget/forget" hover-class="none">忘记旧密码？</navigator>
+		</view>
+	</view>
+	<view class="mt30 f12 c-99">*温馨提示</view>
+	<view class="mt10 search-box plr10 ptb5 f12 c-99">·密码由6-12位数字、大小写字母组成</view>
+	<view class="mt20 plr10 ptb20 tc">
+		<view bindtap="" class="withdrawal tc f20 fb mt10 c-white">确认</view>
+	</view>
+</view>

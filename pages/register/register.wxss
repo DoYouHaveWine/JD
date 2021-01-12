@@ -1,0 +1,30 @@
+/* pages/register/register.wxss */
+.register-box{
+	border-radius: 5px;
+}
+.input-items{
+	border-radius: 10px;
+	height: 100rpx;
+}
+.input-items input{
+	height: 100%;
+}
+.code-btn{
+	color: #3F8DFC !important;
+	background: transparent !important;
+	border: none !important;
+	padding: 0 !important;
+}
+.tip-pwd{
+	position: absolute;
+	right: 20rpx;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 99;
+}
+.withdrawal{
+	height: 100rpx;
+	line-height: 100rpx;
+	background: linear-gradient(-6deg, #3F8DFC 0%, #76D3FE 100%);
+	border-radius: 15px;
+}

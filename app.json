@@ -29,7 +29,10 @@
     "pages/online/online",
     "pages/sbxq/sbxq",
     "pages/sbxql/sbxql",
-    "pages/personalmsg/personalmsg"
+    "pages/personalmsg/personalmsg",
+    "pages/scan/scan",
+    "pages/register/register",
+    "pages/reset/reset"
   ],
   "window": {
     "backgroundTextStyle": "light",
