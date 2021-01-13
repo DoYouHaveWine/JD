@@ -1,2 +1,215 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<!--pages/earndetails/earndetails.wxml-->
+<view class="main plr15 ptb10 border-box">
+	<view>
+		<text class="c-33 f16 fb plr10">时间筛选</text>
+	</view>
+	<view class="flexBox center-item mt15">
+		<view class="flexItem date-box f16 tc">
+			<picker mode="date" value="{{startDate}}" start="2019-09-01" end="2100-01-01" bindchange="bindTimeChange1">
+				<view class="picker">
+					<text>{{startDate?startDate:'开始时间'}}</text>
+					<image src="../../img/icon_open.png" style="width: 20rpx;height: 12rpx;"></image>
+				</view>
+			</picker>
+		</view>
+		<view>——</view>
+		<view class="flexItem date-box f16 tc">
+			<picker mode="date" value="{{endDate}}" start="2019-09-01" end="2100-01-01" bindchange="bindTimeChange2">
+				<view class="picker">
+					<text>{{endDate?endDate:'结束时间'}}</text>
+					<image src="../../img/icon_open.png" style="width: 20rpx;height: 12rpx;"></image>
+				</view>
+			</picker>
+		</view>
+	</view>
+	<view class="mt15 justbetween center-item">
+		<view>
+			<text class="c-33 f16 fb plr10">结算状态</text>
+		</view>
+		<view class="flexBox center-item in-content">
+			<radio-group bindchange="radioChange">
+				<label class="radio">
+					<radio value="r1" checked="true" color="#76D3FE" />已结算
+					<radio value="r2" color="#76D3FE" />未结算
+				</label>
+			</radio-group>
+		</view>
+	</view>
+	<view class="mt10">
+		<view class="flexBox tc">
+			<view data-id="{{index}}" bindtap="changeItems" class="flexItem f16 dir" wx:for="{{tab}}" wx:key='index'>
+				<text class="dib {{index==active?'dir-act':'c-66'}}">{{item.name}}</text>
+			</view>
+		</view>
+		<scroll-view class='plr10 mt15 border-box' scroll-y="true" style="height: 60vh;">
+			<view wx:if="{{active==0}}">
+				<view class="order-items p10 border-box mt10">
+					<view class="justbetween center-item">
+						<view class="flexBox center-item">
+							<text class="line-blue dib"></text>
+							<text class="f16 c-33 plr10">订单号:</text>
+							<text class="f14 c-33">132146543213213</text>
+						</view>
+						<view class="c-418EFC f16">租赁中</view>
+					</view>
+					<view class="bg-f5 p10 border-box mt10">
+						<view class="justbetween center-item">
+							<text class="f12 c-99">租借时长:</text>
+							<text class="f12 c-33">1小时10分钟</text>
+						</view>
+						<view class="justbetween center-item">
+							<text class="f12 c-99">租借时间:</text>
+							<text class="f12 c-33">07-19 12：58</text>
+						</view>
+						<view class="justbetween center-item">
+							<text class="f12 c-99">商家名称:</text>
+							<text class="f12 c-33">网咖</text>
+						</view>
+						<view class="justbetween center-item">
+							<text class="f12 c-99">租借地点:</text>
+							<text class="f12 c-33">广东省深圳市宝安区</text>
+						</view>
+					</view>
+					<view class="tr mt10">
+						<text class="f15 c-33">预计费用</text>
+						<text class="f18" style="color: #F9961D;">￥2.00</text>
+					</view>
+					<view class="justbetween center-item mt10">
+						<view></view>
+						<view class="flexBox center-item f15">
+							<view class="btn-cancle btn-list just-center center-item" bindtap="bind">
+								<text class="plr5">取消订单</text>
+							</view>
+							<view class="btn-lost btn-list mlr10 just-center center-item" bindtap="unbind">
+								<text class="plr5">遗失报备</text>
+							</view>
+							<view class="btn-finish btn-list just-center center-item" bindtap="unbind">
+								<text class="plr5">结束订单</text>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="order-items p10 border-box mt10">
+					<view class="justbetween center-item">
+						<view class="flexBox center-item">
+							<text class="line-blue dib"></text>
+							<text class="f16 c-33 plr10">订单号:</text>
+							<text class="f14 c-33">132146543213213</text>
+						</view>
+						<view class="f16" style="color: #1CCB7E;">已完成</view>
+					</view>
+					<view class="bg-f5 p10 border-box mt10">
+						<view class="justbetween center-item">
+							<text class="f12 c-99">租借时长:</text>
+							<text class="f12 c-33">1小时10分钟</text>
+						</view>
+						<view class="justbetween center-item">
+							<text class="f12 c-99">租借时间:</text>
+							<text class="f12 c-33">07-19 12：58</text>
+						</view>
+						<view class="justbetween center-item">
+							<text class="f12 c-99">商家名称:</text>
+							<text class="f12 c-33">网咖</text>
+						</view>
+						<view class="justbetween center-item">
+							<text class="f12 c-99">租借地点:</text>
+							<text class="f12 c-33">广东省深圳市宝安区</text>
+						</view>
+					</view>
+					<view class="tr mt10">
+						<text class="f15 c-33">结算费用</text>
+						<text class="f18" style="color: #F9961D;">￥2.00</text>
+					</view>
+					<view class="justbetween center-item mt10">
+						<view></view>
+						<view class="flexBox center-item f15">
+							<view class="btn-lost btn-list just-center center-item" bindtap="unbind">
+								<text class="plr5">退款</text>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="order-items p10 border-box mt10">
+					<view class="justbetween center-item">
+						<view class="flexBox center-item">
+							<text class="line-blue dib"></text>
+							<text class="f16 c-33 plr10">订单号:</text>
+							<text class="f14 c-33">132146543213213</text>
+						</view>
+						<view class="f16 c-33">已取消</view>
+					</view>
+					<view class="bg-f5 p10 border-box mt10">
+						<view class="justbetween center-item">
+							<text class="f12 c-99">商家名称:</text>
+							<text class="f12 c-33">网咖</text>
+						</view>
+						<view class="justbetween center-item">
+							<text class="f12 c-99">租借地点:</text>
+							<text class="f12 c-33">广东省深圳市宝安区</text>
+						</view>
+					</view>
+				</view>
+				<view class="order-items p10 border-box mt10">
+					<view class="justbetween center-item">
+						<view class="flexBox center-item">
+							<text class="line-blue dib"></text>
+							<text class="f16 c-33 plr10">订单号:</text>
+							<text class="f14 c-33">132146543213213</text>
+						</view>
+						<view class="f16" style="color: #F35959;">已遗失</view>
+					</view>
+					<view class="bg-f5 p10 border-box mt10">
+						<view class="justbetween center-item">
+							<text class="f12 c-99">租借时长:</text>
+							<text class="f12 c-33">1小时10分钟</text>
+						</view>
+						<view class="justbetween center-item">
+							<text class="f12 c-99">租借时间:</text>
+							<text class="f12 c-33">07-19 12：58</text>
+						</view>
+						<view class="justbetween center-item">
+							<text class="f12 c-99">商家名称:</text>
+							<text class="f12 c-33">网咖</text>
+						</view>
+						<view class="justbetween center-item">
+							<text class="f12 c-99">租借地点:</text>
+							<text class="f12 c-33">广东省深圳市宝安区</text>
+						</view>
+					</view>
+					<view class="tr mt10">
+						<text class="f15 c-33">未结算费用</text>
+						<text class="f18" style="color: #F9961D;">￥2.00</text>
+					</view>
+					<view class="justbetween center-item mt10">
+						<view></view>
+						<view class="flexBox center-item f15">
+							<view class="btn-lost btn-list just-center center-item" bindtap="unbind">
+								<text class="plr5">退款</text>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view wx:if="{{active==1}}">
+				<view class="tc">
+					1
+				</view>
+			</view>
+			<view wx:if="{{active==2}}">
+				<view class="tc">
+					2
+				</view>
+			</view>
+			<view wx:if="{{active==3}}">
+				<view class="tc">
+					3
+				</view>
+			</view>
+			<view wx:if="{{active==4}}">
+				<view class="tc">
+					4
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+</view>

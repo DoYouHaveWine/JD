@@ -1,1 +1,50 @@
-/* pages/order/order.wxss */
+.earn-items {
+	background: #FFFFFF;
+	box-shadow: 3rpx 7rpx 38rpx 0rpx rgba(45, 66, 95, 0.1);
+	border-radius: 30rpx;
+}
+
+.date-box {
+	background: #F1F5FA;
+	color: #A5B1C4;
+	height: 88rpx;
+	line-height: 88rpx;
+	border-radius: 20rpx;
+}
+.order-items{
+	box-shadow: 3rpx 7rpx 38rpx 0rpx rgba(45, 66, 95, 0.2);
+	border-radius: 30rpx;
+}
+.dir {
+	height: 89rpx;
+	line-height: 89rpx;
+	color: #333333;
+}
+
+.dir-act {
+	color: #333333;
+	border-bottom: 2px solid #29BBFF;
+	height: 100%;
+}
+
+.btn-list {
+	width: 170rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	border-radius: 14rpx;
+}
+
+.btn-cancle {
+	border: 1px solid #26262E;
+	color: #333333;
+}
+
+.btn-finish {
+	border: 1px solid #F35959;
+	color: #F35959;
+}
+
+.btn-lost {
+	border: 1px solid #418EFC;
+	color: #418EFC;
+}

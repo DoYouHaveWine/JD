@@ -5,7 +5,7 @@
 			<view class="flexBox center-item">
 				<image src="../../img/icon_count.png" style="width: 20rpx;height: 20rpx;"></image>
 				<text class="f16 plr5">今日数据</text>
-				<image src="../../img/onB.png" style="width: 32rpx;height: 24rpx;"></image>
+				<image src="{{earnSwitch?'../../img/onB.png':'../../img/tip_off.png'}}" bindtap="switch" style="width: 32rpx;height: 24rpx;"></image>
 			</view>
 			<view class="f12">商家总数(家) 5560</view>
 		</view>
