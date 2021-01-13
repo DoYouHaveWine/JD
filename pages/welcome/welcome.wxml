@@ -1,0 +1,15 @@
+<!--pages/welcome/welcome.wxml-->
+<view style="width: 100vw;height: 100vh;">
+	<image src="../../img/welcomem.png" style="width: 100%;height: 100%;"></image>
+	<block wx:if="{{tipBox}}">
+		<view class="bg-meng"></view>
+		<view class="tip-boxs">
+			<image src="../../img/tip_boxs.png" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: -1;"></image>
+				<view style="height: 230rpx;"></view>
+				<view class="f20 fb tc">版本更新</view>
+				<view class="f14 c-3F8DFC tc mt10">1.修复了一些已知bug</view>
+				<view class="f14 c-3F8DFC tc mt10">2.修复了一些已知bug</view>
+		</view>
+		<image src="../../img/tip_closed.png" style="width: 64rpx;height: 64rpx;" class="closed" bintap="closedBox"></image>
+	</block>
+</view>

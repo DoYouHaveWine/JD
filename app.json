@@ -34,7 +34,8 @@
     "pages/register/register",
     "pages/reset/reset",
     "pages/name/name",
-    "pages/named/named"
+    "pages/named/named",
+    "pages/welcome/welcome"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,17 @@
+/* pages/welcome/welcome.wxss */
+.tip-boxs{
+	width: 600rpx;
+	height: 745rpx;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 99;
+}
+.closed{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 200rpx;
+	z-index: 99;
+}

@@ -1,56 +1,63 @@
-//index.js
-//获取应用实例
-const app = getApp()
+import * as echarts from '../../ec-canvas/echarts';
 
+const app = getApp();
+
+function initChart(canvas, width, height, dpr) {
+  const chart = echarts.init(canvas, null, {
+    width: width,
+    height: height,
+    devicePixelRatio: dpr // new
+  });
+  canvas.setChart(chart);
+
+  var option = {
+    color: ["#37A2DA"],
+    grid: {
+      containLabel: false,
+	  left:25,
+	  top:15,
+	  bottom:20
+    },
+    tooltip: {
+      show: true,
+      trigger: 'axis'
+    },
+    xAxis: {
+      type: 'category',
+      // boundaryGap: false,
+      data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+      // show: false
+    },
+    yAxis: {
+      x: 'center',
+      type: 'value',
+      splitLine: {
+        lineStyle: {
+          type: 'dashed'
+        }
+      }
+      // show: false
+    },
+    series: [{
+      name: 'A',
+      type: 'line',
+      smooth: true,
+      data: [18, 36, 65, 30, 78, 40, 33]
+    }]
+  };
+
+  chart.setOption(option);
+  return chart;
+}
 Page({
 	data: {
-		motto: 'Hello World',
-		userInfo: {},
-		hasUserInfo: false,
-		canIUse: wx.canIUse('button.open-type.getUserInfo'),
+		ec: {
+		  onInit: initChart
+		},
 		earnSwitch: true
 	},
-	//事件处理函数
-	bindViewTap: function() {
-		wx.navigateTo({
-			url: '../logs/logs'
-		})
-	},
 	onLoad: function() {
-		if (app.globalData.userInfo) {
-			this.setData({
-				userInfo: app.globalData.userInfo,
-				hasUserInfo: true
-			})
-		} else if (this.data.canIUse) {
-			// 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-			// 所以此处加入 callback 以防止这种情况
-			app.userInfoReadyCallback = res => {
-				this.setData({
-					userInfo: res.userInfo,
-					hasUserInfo: true
-				})
-			}
-		} else {
-			// 在没有 open-type=getUserInfo 版本的兼容处理
-			wx.getUserInfo({
-				success: res => {
-					app.globalData.userInfo = res.userInfo
-					this.setData({
-						userInfo: res.userInfo,
-						hasUserInfo: true
-					})
-				}
-			})
-		}
-	},
-	getUserInfo: function(e) {
-		console.log(e)
-		app.globalData.userInfo = e.detail.userInfo
-		this.setData({
-			userInfo: e.detail.userInfo,
-			hasUserInfo: true
-		})
+
 	},
 	switch () {
 		this.setData({

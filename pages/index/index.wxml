@@ -76,5 +76,8 @@
 			</navigator>
 		</view>
 		<view class="mt10 f16 c-33 fb">近一周收益(元)</view>
+		<view style="height: 270rpx;">
+			<ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+		</view>
 	</view>
 </view>
