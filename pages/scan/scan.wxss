@@ -11,3 +11,13 @@
 	left: 50%;
 	bottom: 50rpx;
 }
+.qr-box{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 370rpx;
+	height: 370rpx;
+	border-radius: 5px;
+	box-shadow: 3rpx 7rpx 14rpx 0px rgba(45, 66, 95, 0.1);
+	top: 510rpx;
+}

@@ -1,5 +1,8 @@
 <!--pages/scan/scan.wxml-->
 <view class="main over-hide">
 	<image src="../../img/bg_scan.png" style="width: 100vw;height: 100vh;"></image>
+	<view wx:if="{{codeText}}" class="bg-white qr-box p10 border-box">
+		<image class="qrcode-img" src="{{qrcodeURL}}" style="width: 100%;height: 100%;"></image>
+	</view>
 		<view class="withdrawal tc f20 fb mt10 c-white">保存至相册</view>
 </view>
