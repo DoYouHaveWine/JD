@@ -41,7 +41,7 @@
 				<text class="dib {{index==active?'dir-act':'c-66'}}">{{item.name}}</text>
 			</view>
 		</view>
-		<scroll-view class='plr10 mt15 border-box' scroll-y="true" style="height: 60vh;">
+		<scroll-view class='plr10 mt15 border-box' scroll-y="true" style="height: 65vh;">
 			<view wx:if="{{active==0}}">
 				<view class="order-items p10 border-box mt10">
 					<view class="justbetween center-item">
@@ -50,7 +50,9 @@
 							<text class="f16 c-33 plr10">订单号:</text>
 							<text class="f14 c-33">132146543213213</text>
 						</view>
-						<view class="c-418EFC f16">租赁中</view>
+						<view>
+							<image src="../../img/icon_order.png" style="width: 32rpx;height: 32rpx;"></image>
+						</view>
 					</view>
 					<view class="bg-f5 p10 border-box mt10">
 						<view class="justbetween center-item">
@@ -70,9 +72,15 @@
 							<text class="f12 c-33">广东省深圳市宝安区</text>
 						</view>
 					</view>
-					<view class="tr mt10">
-						<text class="f15 c-33">预计费用</text>
-						<text class="f18" style="color: #F9961D;">￥2.00</text>
+					<view class="justbetween center-item mt10">
+						<view class="c-418EFC f16">
+							<image src="../../img/icon_order_ing.png" style="width: 24rpx;height: 24rpx;"></image>
+							<text class="plr5">租赁中</text>
+						</view>
+						<view>
+							<text class="f15 c-33">预计费用</text>
+							<text class="f18" style="color: #F9961D;">￥2.00</text>
+						</view>
 					</view>
 					<view class="justbetween center-item mt10">
 						<view></view>
@@ -92,11 +100,13 @@
 				<view class="order-items p10 border-box mt10">
 					<view class="justbetween center-item">
 						<view class="flexBox center-item">
-							<text class="line-blue dib"></text>
+							<text class="line-blue dib" style="background: linear-gradient(156deg, #FDD96B, #FFA500);"></text>
 							<text class="f16 c-33 plr10">订单号:</text>
 							<text class="f14 c-33">132146543213213</text>
 						</view>
-						<view class="f16" style="color: #1CCB7E;">已完成</view>
+						<view>
+							<image src="../../img/icon_order.png" style="width: 32rpx;height: 32rpx;"></image>
+						</view>
 					</view>
 					<view class="bg-f5 p10 border-box mt10">
 						<view class="justbetween center-item">
@@ -116,9 +126,15 @@
 							<text class="f12 c-33">广东省深圳市宝安区</text>
 						</view>
 					</view>
-					<view class="tr mt10">
-						<text class="f15 c-33">结算费用</text>
-						<text class="f18" style="color: #F9961D;">￥2.00</text>
+					<view class="justbetween center-item mt10">
+						<view class="f16" style="color: #1CCB7E;">
+							<image src="../../img/icon_order_fin.png" style="width: 24rpx;height: 24rpx;"></image>
+							<text class="plr5">已完成</text>
+						</view>
+						<view>
+							<text class="f15 c-33">结算费用</text>
+							<text class="f18" style="color: #F9961D;">￥2.00</text>
+						</view>
 					</view>
 					<view class="justbetween center-item mt10">
 						<view></view>
@@ -136,7 +152,10 @@
 							<text class="f16 c-33 plr10">订单号:</text>
 							<text class="f14 c-33">132146543213213</text>
 						</view>
-						<view class="f16 c-33">已取消</view>
+						<!-- <view class="f16 c-33">已取消</view> -->
+						<view>
+							<image src="../../img/icon_order.png" style="width: 32rpx;height: 32rpx;"></image>
+						</view>
 					</view>
 					<view class="bg-f5 p10 border-box mt10">
 						<view class="justbetween center-item">
@@ -148,6 +167,13 @@
 							<text class="f12 c-33">广东省深圳市宝安区</text>
 						</view>
 					</view>
+					<view class="justbetween center-item mt10">
+						<view class="f16 c-33">
+							<image src="../../img/icon_order_can.png" style="width: 24rpx;height: 24rpx;"></image>
+							<text class="plr5">已取消</text>
+						</view>
+						<view></view>
+					</view>
 				</view>
 				<view class="order-items p10 border-box mt10">
 					<view class="justbetween center-item">
@@ -156,7 +182,10 @@
 							<text class="f16 c-33 plr10">订单号:</text>
 							<text class="f14 c-33">132146543213213</text>
 						</view>
-						<view class="f16" style="color: #F35959;">已遗失</view>
+						<!-- <view class="f16" style="color: #F35959;">已遗失</view> -->
+						<view>
+							<image src="../../img/icon_order.png" style="width: 32rpx;height: 32rpx;"></image>
+						</view>
 					</view>
 					<view class="bg-f5 p10 border-box mt10">
 						<view class="justbetween center-item">
@@ -176,9 +205,15 @@
 							<text class="f12 c-33">广东省深圳市宝安区</text>
 						</view>
 					</view>
-					<view class="tr mt10">
-						<text class="f15 c-33">未结算费用</text>
-						<text class="f18" style="color: #F9961D;">￥2.00</text>
+					<view class="justbetween center-item mt10">
+						<view class="f16" style="color: #F35959;">
+							<image src="../../img/icon_order_lose.png" style="width: 24rpx;height: 24rpx;"></image>
+							<text class="plr5">已遗失</text>
+						</view>
+						<view>
+							<text class="f15 c-33">未结算费用</text>
+							<text class="f18" style="color: #F9961D;">￥2.00</text>
+						</view>
 					</view>
 					<view class="justbetween center-item mt10">
 						<view></view>

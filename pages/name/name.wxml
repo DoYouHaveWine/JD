@@ -6,20 +6,8 @@
 		</view>
 	</view>
 	<view class="justbetween center-item mt10">
-		<view class="id-content prelative">
-			<view>
-				<image src="../../img/idcard1.png" class="middle-img" style="width: 202rpx;height: 126rpx;"></image>
-				<image src="../../img/icon_photo.png" class="middle-img" style="width: 64rpx;height: 64rpx;z-index: 10;"></image>
-			</view>
-			<view class="name-tip c-white f15 tc">拍摄正面</view>
-		</view>
-		<view class="id-content prelative">
-			<view>
-				<image src="../../img/idcard1.png" class="middle-img" style="width: 202rpx;height: 126rpx;"></image>
-				<image src="../../img/icon_photo.png" class="middle-img" style="width: 64rpx;height: 64rpx;z-index: 10;"></image>
-			</view>
-			<view class="name-tip c-white f15 tc">拍摄背面</view>
-		</view>
+		<view class="id-content bg-id1 prelative"></view>
+		<view class="id-content bg-id2 prelative"></view>
 	</view>
 	<view class="c-66 f12 mt10">请保持照片中身份证显示完整，字体清晰可见，亮度均匀！</view>
 	<view class="flexBox center-item mt10">
